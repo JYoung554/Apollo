@@ -20,7 +20,22 @@ const getArtists = async (req,res)=>{
         return response.status(500).json({ error: error.message })
     }
 }
+
+const deleteArtist = async (req,res)=>{
+    try {
+        const {id} = req.params
+        const removed = await Artist.findByIdAndDelete(id)
+        if(removed){
+            return res.status(200).send('Artist Removed')
+        }
+
+    } catch (error){
+        return response.status(500).json({ error: error.message })
+    }
+}
+
 module.exports = {
     AddArtist,
-    getArtists
+    getArtists,
+    deleteArtist
 }
