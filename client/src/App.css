@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.home-wrap{ background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
+      background-size: cover;
+
+}
