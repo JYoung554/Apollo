@@ -35,6 +35,15 @@ export  default class HomePage extends Component {
     }
   }
 
+  handleChange = ({target}) =>{
+    this.setState({
+      [target.name]: target.value
+    })
+      console.log('Submit', this.state)
+  }
+
+
+
 
   render (){
     const artists = this.state.allArtists
