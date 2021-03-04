@@ -52,7 +52,11 @@ export  default class HomePage extends Component {
     this.addNewArtist()
   }
 
-  
+updateSubmitted = ()=>{
+  this.setState({
+    submitted:false
+  })
+}  
 
 
   render (){
