@@ -18,7 +18,7 @@ export default class AlbumPage extends Component {
       const res = await axios.get('http://localhost:3001/api/albums')
       console.log(res)
       this.setState({
-        albums: res.data.albums
+        albums: res.data.album
       })
     } catch (error) {
       throw error
@@ -34,7 +34,7 @@ export default class AlbumPage extends Component {
       console.log(res.data)
       const res2 = await axios.get('http://localhost:3001/api/albums')
       this.setState({
-        albums: res2.data.albums
+        albums: res2.data.album
       })
       return res2.data
     } catch (error) {
@@ -46,9 +46,9 @@ export default class AlbumPage extends Component {
 
 render(){
 
-  // if(this.state.albums){
-  //   console.log(this.state.albums[0].name)
-  // }
+  if(this.state.albums){
+    console.log(this.state.albums)
+  
   const albums = this.state.albums.map((album, index)=>{
    return <AlbumPost album={album}
     key={`Album${index}`}
@@ -61,5 +61,6 @@ render(){
         {albums}
       </div>
     )
+  }
 }
 }
