@@ -44,6 +44,8 @@ export default class ArtistPage extends Component {
     }
 
 
+    
+
 
 
 

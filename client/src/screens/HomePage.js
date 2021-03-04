@@ -10,23 +10,30 @@ export  default class HomePage extends Component {
     super()
       this.state = {
         artists: [],
-        albums: []
+        albums: [],
+        artistName:'',
+        description: ''
       }
   }
 
 
-// getSearchResults = async (e) => {
-//   e.preventDefault()
-//   const response = await axios.get(
-//     `https://api/artists?search=${this.state.searchQuery}`
-//   )
-//   this.setState({ searchResults: response.data.results })
-//   this.setState({ searched: true })
-//   this.setState({ searchQuery: '' })
-// }
-// handleChange = (event) => {
-//   this.setState({ searchQuery: event.target.value })
-// }
+  addNewArtist = async () => {
+    const newArtist = {
+      artist: this.state.artistName,
+      description: this.state.description
+    }
+    try {
+      const res = await axios.post('http://localhost:3001/api/artist', newArtist)
+      console.log(res.data)
+      const res2 = await axios.get('http://localhost:3001/api/artists')
+      this.setState({
+        artistPost: res2.data.artists
+      })
+      return res2.data
+    } catch (error) {
+      throw error
+    }
+  }
 
 
   render (){
