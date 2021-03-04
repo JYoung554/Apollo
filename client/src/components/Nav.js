@@ -13,12 +13,9 @@ export default class Nav extends Component {
               <h1></h1>
             </div>
           </NavLink>
-          <NavLink to="/allartists" className="nav1">
-          </NavLink>
+          <NavLink to="/artists" className="nav1">Artists </NavLink>
 
-          <NavLink to="/allalbums" className="nav2">
-            All Posts
-          </NavLink>
+          <NavLink to="/albums" className="nav2">Albums </NavLink>
         </nav>
       </header>
     )
