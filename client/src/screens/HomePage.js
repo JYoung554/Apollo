@@ -42,7 +42,17 @@ export  default class HomePage extends Component {
       console.log('Submit', this.state)
   }
 
+  handleSubmit = (event) => {
+      event.preventDefault()
+      this.setState({
+        submitted : true,
+        artist:'',
+        description:''
+      })
+    this.addNewArtist()
+  }
 
+  
 
 
   render (){
