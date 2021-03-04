@@ -36,6 +36,7 @@ export  default class HomePage extends Component {
     <div className="Home">
       <h1>Home</h1>
     </div>
+      <h3 className='add'>Add Artist/Album</h3>
     </div>
   );
 }
