@@ -40,7 +40,7 @@ export  default class App extends Component {
   return (
     <div className="App">
       <Nav />
-      <main>
+      <main className='app-body'>
         <Switch>
           <Route exact path='/'component={HomePage}/>
           <Route path='/artists' component={ArtistPage}/>

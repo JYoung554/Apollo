@@ -3,13 +3,13 @@ const controllers = require('../controllers')
 const router = Router();
 router.get('/', (req, res) => res.send('This is root!'))
 
-router.post('/artists/add', controllers.addArtist)
+router.post('/artists', controllers.addArtist)
 router.get('/artists', controllers.getArtists)
-router.delete('/artist/delete/:id', controllers.deleteArtist)
+router.delete('/artists/:id', controllers.deleteArtist)
 
-router.post('/albums/add', controllers.addAlbum)
+router.post('/albums', controllers.addAlbum)
 router.get('/albums', controllers.getAlbum)
-router.delete('/album/delete/:id', controllers.deleteAlbum)
+router.delete('/albums/:id', controllers.deleteAlbum)
 
 
 

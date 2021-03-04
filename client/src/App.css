@@ -1,44 +1,24 @@
 .App {
+  background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
+  background-size: cover;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-body{
+  /* background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
+  background-size: cover; */
+  text-align: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.post-body{
+  background-color: aqua;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.artist-body{
+  background-color: brown;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-.home-wrap{ background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
+/* .home-wrap{ background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
       background-size: cover;
-
-}
+} */

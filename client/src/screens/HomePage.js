@@ -10,7 +10,7 @@ export  default class HomePage extends Component {
     super()
       this.state = {
         artists: [],
-        albums:[]
+        albums: []
       }
   }
 
