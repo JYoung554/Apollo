@@ -3,6 +3,9 @@ import './App.css';
 import HomePage from './screens/HomePage'
 import axios from 'axios'
 import { Route, Switch, } from 'react-router-dom'
+import ArtistPage from './screens/ArtistPage';
+import AlbumPage from './screens/AlbumPage';
+import Nav from './components/Nav'
 
 
 export  default class App extends Component {
@@ -13,7 +16,8 @@ export  default class App extends Component {
         searchQuery: '',
         searchResults: [],
         searched: false,
-        artists: []
+        artists: [],
+        albums: []
       }
   }
 componentDidMount(){
@@ -35,12 +39,17 @@ getAllArtists = async () => {
   render (){
   return (
     <div className="App">
+      <Nav />
       <Switch>
       <Route exact path='/' >
         <HomePage/>
         </Route>
-      
-
+        <Route path='/artists'>
+        <ArtistPage artists={this.state.artists}/>
+        </Route>
+        <Route path='/albums'>
+        <AlbumPage albums={this.state.albums}/>
+        </Route>
 
       </Switch>
 
