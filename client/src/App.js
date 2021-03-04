@@ -8,32 +8,43 @@ import { Route, Switch, } from 'react-router-dom'
 export  default class App extends Component {
   constructor(){
     super()
-
-    this.state = {
-        search : ['']
-    }
+      this.state = {
+        genres:[],
+        searchQuery: '',
+        searchResults: [],
+        searched: false,
+        artists: []
+      }
   }
-  componentDidMount(){
-    this.getAllResults()
+componentDidMount(){
+  this.getAllArtists()
 }
 
-getAllResults = async () => {
+getAllArtists = async () => {
   try {
-    const res = await axios.get('http://localhost:3001/api/allresults')
-    // console.log(res)
+    const res = await axios.get('http://localhost:3001/api/artists')
+    console.log(res)
     this.setState({
-      allResults: res.data.results
+      artists: res.data.artists
     })
   } catch (error) {
     throw error
   }
 }
 
-
   render (){
   return (
     <div className="App">
-      <HomePage/>
+      <Switch>
+      <Route exact path='/' >
+        <HomePage/>
+        </Route>
+      
+
+
+      </Switch>
+
+    
     </div>
   );
 }
