@@ -10,6 +10,17 @@ const AddArtist = async (request, response) => {
         return response.status(500).json({ error: error.message })
     }
 }
+
+const getArtists = async (req,res)=>{
+    try {
+        const artists = await Artist.find()
+        return res.status(200).json({artists})
+
+    } catch (error){
+        return response.status(500).json({ error: error.message })
+    }
+}
 module.exports = {
     AddArtist,
+    getArtists
 }
