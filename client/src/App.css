@@ -50,6 +50,7 @@ height: 1000px;
 }
 
 .post-body{
+  height: auto;
   width: 300px;
   margin: 0 auto;
   display: flex;
@@ -75,7 +76,6 @@ height: 1000px;
   width: 100vw;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg);
   background-size: cover;
   text-align: center;
   background-repeat: no-repeat;
