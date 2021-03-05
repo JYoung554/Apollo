@@ -71,8 +71,9 @@ updateSubmitted = ()=>{
     <div className="Home">
       <h1></h1>
     </div>
-      
-    <div className='add-div'><h3 className='add'>Add Album</h3>
+      <section>
+    <div className='add-div'>
+      <h3 className='add'>Add Album</h3>
     <form className='form-body' onSubmit={this.handleSubmit}>
     <input
     type='text'
@@ -143,6 +144,7 @@ updateSubmitted = ()=>{
       
     </div>
   </div>
+  </section>
   </div>
   );
 }
