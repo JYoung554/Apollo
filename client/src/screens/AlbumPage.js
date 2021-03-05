@@ -57,7 +57,7 @@ render(){
     })
     return(
       <div className='album-body add2'>
-        <h1 className='page-title'>Album Page</h1>
+        <h1 className='page-title album-title'>Album Page</h1>
         {albums}
       </div>
     )

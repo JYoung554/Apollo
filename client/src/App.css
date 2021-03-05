@@ -96,7 +96,8 @@ height: 1000px;
 .page-title{
 
   width: 200px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
+  margin-top: 15px;
   color: aliceblue;
   background-image: linear-gradient(bottom, rgb(210, 244, 254) 25%, rgb(149, 194, 253) 100%);
 	background-image: -o-inear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
@@ -135,6 +136,12 @@ border-radius: 10%;
   width: 75px;
 }
 
+.album-body{
+  margin: 0 auto;
+  display: grid;
+  width: 75px;
+}
+
 .form-display{
   display: flex;
   flex-direction: row;
@@ -149,6 +156,9 @@ border-radius: 10%;
   object-fit: cover;
 }
 
+.album-title{
+  margin: 0 auto;
+}
 
 
 /* .home-wrap{ background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
