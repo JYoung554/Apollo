@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import { NavLink, Route, Switch } from 'react-router-dom';
-import CreateAlbum from '../components/CreateAlbum';
 
-export  default class HomePage extends Component {
+export  default class CreateAlbum extends Component {
   constructor(){
     super()
       this.state = {
-        artists: [],
         albums: [],
         name:'',
         genre:'',
@@ -16,18 +14,18 @@ export  default class HomePage extends Component {
   }
 
 
-  addNewArtist = async () => {
-    const newArtist = {
+  addNewAlbum = async () => {
+    const newAlbum = {
       name: this.state.name,
       description: this.state.description,
       genre: this.state.genre
     }
     try {
-      const res = await axios.post('http://localhost:3001/api/artists', newArtist)
+      const res = await axios.post('http://localhost:3001/api/albums', newAlbum)
       console.log(res.data)
-      const res2 = await axios.get('http://localhost:3001/api/artists')
+      const res2 = await axios.get('http://localhost:3001/api/albums')
       this.setState({
-        artistPost: res2.data.artists
+        albumPost: res2.data.album
       })
       return res2.data
     } catch (error) {
@@ -50,7 +48,7 @@ export  default class HomePage extends Component {
         description:'',
         genre:''
       })
-    this.addNewArtist()
+    this.addNewAlbum()
   }
 
 updateSubmitted = ()=>{
@@ -61,37 +59,37 @@ updateSubmitted = ()=>{
 
 
   render (){
-    const artists = this.state.allArtists
+    const albums = this.state.allAlbums
   return (
     <div className='home-wrap'>
     <div className="Home">
-      <h1>Apollo</h1>
+      <h1></h1>
     </div>
       
-    <div><h3 className='add'>Add Artist</h3>
+    <div><h3 className='add'>Add Album</h3>
     <form className='form-body' onSubmit={this.handleSubmit}>
     <input
     type='text'
-    placeholder='Artist Name'
+    placeholder='Album Name'
     value={this.state.name}
     onChange={this.handleChange}
     name='name'
-    className='form-artist'
+    className='form-album'
     />
 
 <input
     type='text'
-    placeholder='Artist Genre'
+    placeholder='Album Genre'
     value={this.state.genre}
     onChange={this.handleChange}
     name='genre'
-    className='form-artist'
+    className='form-album'
     />
 
 
   <input
     type='text'
-    placeholder='Artist Description'
+    placeholder='Album Description'
     value={this.state.description}
     onChange={this.handleChange}
     name='description'
@@ -102,12 +100,12 @@ updateSubmitted = ()=>{
     <button type='submit' className='custom-btn'>Add</button>
 
     {this.state.submitted && (
-      <button className='custom-btn view-post'><NavLink className='view-btn' to='/artists'>View Artists</NavLink></button>
+      <button className='custom-btn view-post'><NavLink className='view-btn' to='/albums'>View Albums</NavLink></button>
     )}
 
     </form>
     <div>
-      <CreateAlbum/>
+      
     </div>
   </div>
   </div>
