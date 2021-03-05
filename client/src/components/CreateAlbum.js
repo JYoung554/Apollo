@@ -69,9 +69,8 @@ updateSubmitted = ()=>{
   return (
     <div className='home-wrap'>
     <div className="Home">
-      <h1></h1>
     </div>
-      <section className="form-body">
+      <section className="form-display">
     <div className='add-div'>
       <h3 className='add'>Add Album</h3>
     <form className='form-body' onSubmit={this.handleSubmit}>
