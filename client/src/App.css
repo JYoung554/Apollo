@@ -5,7 +5,7 @@
 body{
 font-family: 'Permanent Marker', cursive;
 background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
-background-color: #73868cb5;
+background-color: #f9fbfc;
 height: auto;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -130,7 +130,7 @@ div.post-body.album{
   width: 200px;
   margin: 0 auto;
   margin-top: 15px;
-  color: aliceblue;
+  color: rgb(239, 241, 244);
   font-family: 'Permanent Marker', cursive;
   background-image: linear-gradient(bottom, rgb(210, 244, 254) 25%, rgb(149, 194, 253) 100%);
 	background-image: -o-inear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
@@ -170,8 +170,8 @@ border-radius: 10%;
 
 .album-body{
   margin: 0 auto;
-  display: grid;
-  width: 75px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .form-display{

@@ -5,7 +5,7 @@
 
 ***
 
-####  [Apollo Artist Info App]()
+####  [Apollo Artist Info App](https://github.com/JYoung554/Apollo)
 
 ***
 
@@ -36,6 +36,7 @@ This is a full-stack MERN application in the form of a music app where users can
 
 ### ***Screenshots***
 
+![mockup](Screen Shot 2021-03-05 at 1.12.38 PM.png)
 
 #### Coming Soon/Future Updates
 
@@ -46,3 +47,4 @@ This is a full-stack MERN application in the form of a music app where users can
 - Sign In
 
 ## Credits
+
