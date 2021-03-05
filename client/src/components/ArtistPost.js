@@ -15,7 +15,7 @@ render(){
         <div className='post-body'>
           <h1>{artist.name}</h1>
         <p>{artist.genre}</p>
-        <p>{artist.description}</p>
+        <p>{artist.yearsActive}</p>
         <img src={artist.image} className="image-source"></img>
         <div>
           <button

@@ -10,9 +10,9 @@ const Artist = new Schema(
       type: String,
       required: true,
     },
-    description: {
+    yearsActive: {
       type: String,
-      required: true,
+      required: false,
     },
     image: {
       type: String,

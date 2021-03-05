@@ -11,7 +11,7 @@ export  default class HomePage extends Component {
         albums: [],
         name:'',
         genre:'',
-        description: '',
+        yearsActive: '',
         image:''
       }
   }
@@ -20,7 +20,7 @@ export  default class HomePage extends Component {
   addNewArtist = async () => {
     const newArtist = {
       name: this.state.name,
-      description: this.state.description,
+      yearsActive: this.state.yearsActive,
       genre: this.state.genre,
       image: this.state.image
     }
@@ -49,7 +49,7 @@ export  default class HomePage extends Component {
       this.setState({
         submitted : true,
         name:'',
-        description:'',
+        yearsActive:'',
         genre:'',
         image:''
       })
@@ -95,10 +95,10 @@ updateSubmitted = ()=>{
 
         <input
           type='text'
-          placeholder='Artist Description'
-          value={this.state.description}
+          placeholder='Years Active'
+          value={this.state.yearsActive}
           onChange={this.handleChange}
-          name='description'
+          name='years-active'
           maxLength='200'
           className='form-artist'
         />

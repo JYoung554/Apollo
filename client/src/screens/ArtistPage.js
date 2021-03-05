@@ -64,7 +64,7 @@ export default class ArtistPage extends Component {
       
     return(
       <div>
-        <h1>Artist Page</h1>
+        <h1 className='page-title'>Artist Page</h1>
       <div className='artist-body'>
         {artists}
       </div>
