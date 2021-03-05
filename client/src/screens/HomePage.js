@@ -26,7 +26,6 @@ export  default class HomePage extends Component {
     }
     try {
       const res = await axios.post('http://localhost:3001/api/artists', newArtist)
-      console.log(res.data)
       const res2 = await axios.get('http://localhost:3001/api/artists')
       this.setState({
         artistPost: res2.data.artists
@@ -41,7 +40,6 @@ export  default class HomePage extends Component {
     this.setState({
       [target.name]: target.value
     })
-      console.log('Submit', this.state)
   }
 
   handleSubmit = (event) => {

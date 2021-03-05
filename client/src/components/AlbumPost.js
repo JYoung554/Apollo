@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 export default class AlbumPost extends Component {
 render(){
-  console.log(this.props)
   const {album, onClick} = this.props
 
 

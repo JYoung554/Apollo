@@ -31,7 +31,6 @@ export default class AlbumPage extends Component {
       const res = await axios.delete(
         `http://localhost:3001/api/albums/${albumId}`
       )
-      console.log(res.data)
       const res2 = await axios.get('http://localhost:3001/api/albums')
       this.setState({
         albums: res2.data.album
@@ -47,7 +46,6 @@ export default class AlbumPage extends Component {
 render(){
 
   if(this.state.albums){
-    console.log(this.state.albums)
   
   const albums = this.state.albums.map((album, index)=>{
    return <AlbumPost album={album}

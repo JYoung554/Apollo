@@ -3,7 +3,6 @@ import ClearPost from './ArtistDelete'
 
 export default class ArtistPost extends Component {
 render(){
-  console.log(this.props)
   const {artist,  onClick} = this.props
 
 

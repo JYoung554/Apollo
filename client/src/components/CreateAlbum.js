@@ -26,7 +26,7 @@ export  default class CreateAlbum extends Component {
     }
     try {
       const res = await axios.post('http://localhost:3001/api/albums', newAlbum)
-      console.log(res.data)
+      
       const res2 = await axios.get('http://localhost:3001/api/albums')
       this.setState({
         albumPost: res2.data.album
@@ -41,7 +41,7 @@ export  default class CreateAlbum extends Component {
     this.setState({
       [target.name]: target.value
     })
-      console.log('Submit', this.state)
+    
   }
 
   handleSubmit = (event) => {
