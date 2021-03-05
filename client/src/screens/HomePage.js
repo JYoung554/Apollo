@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import { NavLink, Route, Switch } from 'react-router-dom';
 import CreateAlbum from '../components/CreateAlbum';
+import { BASE_URL } from '../globals';
 
 export  default class HomePage extends Component {
   constructor(){
@@ -25,8 +26,8 @@ export  default class HomePage extends Component {
       image: this.state.image
     }
     try {
-      const res = await axios.post('http://localhost:3001/api/artists', newArtist)
-      const res2 = await axios.get('http://localhost:3001/api/artists')
+      const res = await axios.post(`${BASE_URL}/api/artists`, newArtist)
+      const res2 = await axios.get(`${BASE_URL}/api/artists`)
       this.setState({
         artistPost: res2.data.artists
       })
