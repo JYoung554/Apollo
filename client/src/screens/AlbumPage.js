@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AlbumPost from '../components/AlbumPost'
 import axios from 'axios'
+import {BASE_URL} from '../globals'
 
 export default class AlbumPage extends Component {
   constructor(props){
