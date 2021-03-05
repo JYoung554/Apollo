@@ -56,6 +56,9 @@ height: 100vh;
 
 .add{
   color: brown;
+  position: absolute;
+  top: 125px;
+  
 }
 
 .page-title{
@@ -63,15 +66,19 @@ height: 100vh;
 
 }
 
-.nav{background-color: white;
+.nav{background-color: rgba(191, 70, 70, 0.077);
+border-radius: 10%;
+
 
 }
 
 .add-div{
   display: flex;
+}
+
+.add-div2{
+  display: flex;
   
-
-
 }
 
 .form-body{
@@ -83,6 +90,12 @@ height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.image-source{
+  background-size: cover;
+  height: 300px;
+  width: 300px;
 }
 
 

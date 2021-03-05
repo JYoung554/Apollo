@@ -56,7 +56,7 @@ render(){
     onClick={this.deleteAlbum}    />
     })
     return(
-      <div className='album-body'>
+      <div className='album-body add2'>
         <h1>Album Page</h1>
         {albums}
       </div>

@@ -16,6 +16,7 @@ render(){
           <h1>{artist.name}</h1>
         <p>{artist.genre}</p>
         <p>{artist.description}</p>
+        <img src={artist.image} className="image-source"></img>
         <div>
           <button
           onClick={()=>onClick(artist._id)}

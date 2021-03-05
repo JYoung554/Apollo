@@ -11,7 +11,8 @@ export  default class HomePage extends Component {
         albums: [],
         name:'',
         genre:'',
-        description: ''
+        description: '',
+        image:''
       }
   }
 
@@ -20,7 +21,8 @@ export  default class HomePage extends Component {
     const newArtist = {
       name: this.state.name,
       description: this.state.description,
-      genre: this.state.genre
+      genre: this.state.genre,
+      image: this.state.image
     }
     try {
       const res = await axios.post('http://localhost:3001/api/artists', newArtist)
@@ -48,7 +50,8 @@ export  default class HomePage extends Component {
         submitted : true,
         name:'',
         description:'',
-        genre:''
+        genre:'',
+        image:''
       })
     this.addNewArtist()
   }
@@ -100,6 +103,16 @@ updateSubmitted = ()=>{
           className='form-artist'
         />
 
+<input
+          type='text'
+          placeholder='Artist Image'
+          value={this.state.image}
+          onChange={this.handleChange}
+          name='image'
+          maxLength='200'
+          className='form-artist'
+        />
+
         <button type='submit' className='custom-btn'>Add</button>
 
       {this.state.submitted && (
@@ -108,7 +121,7 @@ updateSubmitted = ()=>{
 
       </form>
   </div>
-      <div className='add-div'>
+      <div className='add-div2'>
         <CreateAlbum/>
       </div>
       </section>
