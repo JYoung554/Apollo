@@ -11,8 +11,8 @@ render(){
 
   return (
   
-    <div>
-        <div className='post-body album'>
+    <div className='album'>
+        <div className='post-body'>
           <h1>{album.name}</h1>
           <p>{album.artist}</p>
           <p>{album.genre}</p>
