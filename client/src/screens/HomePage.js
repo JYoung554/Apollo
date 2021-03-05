@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-// import './App.css';
-import Search from '../components/Search'
 import axios from 'axios'
-import ArtistPost from '../components/ArtistPost';
 import { NavLink, Route, Switch } from 'react-router-dom';
 
 export  default class HomePage extends Component {
@@ -100,20 +97,6 @@ updateSubmitted = ()=>{
     maxLength='200'
     className='form-text'
     />
-
-
-
-
-
-    {/* <textarea 
-    type='text'
-    placeholder='Artist Description'
-    value={this.state.description}
-    onChange={this.handleChange}
-    name='description'
-    maxLength='200'
-    className='form-text'
-    /> */}
 
     <button type='submit' className='custom-btn'>Add</button>
 
