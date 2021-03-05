@@ -10,9 +10,9 @@ const Album = new Schema(
       type: String,
       required: true,
     },
-    singles: {
-      type: Array,
-      required: true,
+    image: {
+      type: String,
+      required: false,
     },
   },
   { timestamps: true }

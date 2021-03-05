@@ -9,7 +9,8 @@ export  default class CreateAlbum extends Component {
         albums: [],
         name:'',
         genre:'',
-        description: ''
+        description: '',
+        image:''
       }
   }
 
@@ -18,7 +19,8 @@ export  default class CreateAlbum extends Component {
     const newAlbum = {
       name: this.state.name,
       description: this.state.description,
-      genre: this.state.genre
+      genre: this.state.genre,
+      image: this.state.image
     }
     try {
       const res = await axios.post('http://localhost:3001/api/albums', newAlbum)
@@ -46,7 +48,8 @@ export  default class CreateAlbum extends Component {
         submitted : true,
         name:'',
         description:'',
-        genre:''
+        genre:'',
+        image:''
       })
     this.addNewAlbum()
   }
@@ -96,6 +99,16 @@ updateSubmitted = ()=>{
     maxLength='200'
     className='form-text'
     />
+
+<input
+          type='text'
+          placeholder='Album Image'
+          value={this.state.image}
+          onChange={this.handleChange}
+          name='image'
+          maxLength='200'
+          className='form-album'
+        />
 
     <button type='submit' className='custom-btn'>Add</button>
 
