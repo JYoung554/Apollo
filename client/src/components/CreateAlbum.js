@@ -9,8 +9,9 @@ export  default class CreateAlbum extends Component {
         albums: [],
         name:'',
         genre:'',
-        description: '',
-        image:''
+        image:'',
+        artist:'',
+        releaseDate:''
       }
   }
 
@@ -18,8 +19,9 @@ export  default class CreateAlbum extends Component {
   addNewAlbum = async () => {
     const newAlbum = {
       name: this.state.name,
-      description: this.state.description,
+      artist:this.state.artist,
       genre: this.state.genre,
+      releaseDate: this.state.release_date,
       image: this.state.image
     }
     try {
@@ -47,8 +49,9 @@ export  default class CreateAlbum extends Component {
       this.setState({
         submitted : true,
         name:'',
-        description:'',
+        artist:'',
         genre:'',
+        releaseDate:'',
         image:''
       })
     this.addNewAlbum()
@@ -90,7 +93,7 @@ updateSubmitted = ()=>{
     />
 
 
-  <input
+  {/* <input
     type='text'
     placeholder='Album Description'
     value={this.state.description}
@@ -98,7 +101,7 @@ updateSubmitted = ()=>{
     name='description'
     maxLength='200'
     className='form-text'
-    />
+    /> */}
 
 <input
           type='text'
@@ -107,6 +110,25 @@ updateSubmitted = ()=>{
           onChange={this.handleChange}
           name='image'
           maxLength='200'
+          className='form-album'
+        />
+
+<input
+          type='text'
+          placeholder='Artist Name'
+          value={this.state.artist}
+          onChange={this.handleChange}
+          name='artist'
+          maxLength='200'
+          className='form-album'
+        />
+
+<input
+          type='text'
+          placeholder='Release-Date'
+          value={this.state.releaseDate}
+          onChange={this.handleChange}
+          name='release-date'
           className='form-album'
         />
 

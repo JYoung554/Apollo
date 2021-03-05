@@ -14,9 +14,10 @@ render(){
     <div>
         <div className='post-body'>
           <h1>{album.name}</h1>
-        <p>{album.genre}</p>
-        <p>{album.description}</p>
-        <img src={album.image} className="image-source"></img>
+          <p>{album.artist}</p>
+          <p>{album.genre}</p>
+          <p>{album.releaseDate}</p>
+          <img src={album.image} className="image-source"></img>
         <div>
           <button
           onClick={()=>onClick(album._id)}
