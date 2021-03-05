@@ -10,12 +10,12 @@ export default class Nav extends Component {
 
           <NavLink to="/">
             <div>
-              <h1>Home</h1>
+              <h1 className="page-title">Home</h1>
             </div>
           </NavLink>
-          <NavLink to="/artists" className="nav1">Artists </NavLink>
+          <NavLink to="/artists" className="nav1 page-title">Artists </NavLink>
 
-          <NavLink to="/albums" className="nav2">Albums </NavLink>
+          <NavLink to="/albums" className="nav2 page-title">Albums </NavLink>
         </nav>
       </header>
     )
