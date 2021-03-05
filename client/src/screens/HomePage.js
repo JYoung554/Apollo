@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Search from '../components/Search'
 import axios from 'axios'
 import ArtistPost from '../components/ArtistPost';
-import { Route, Switch } from 'react-router-dom';
+import { NavLink, Route, Switch } from 'react-router-dom';
 
 export  default class HomePage extends Component {
   constructor(){
@@ -11,7 +11,8 @@ export  default class HomePage extends Component {
       this.state = {
         artists: [],
         albums: [],
-        artistName:'',
+        name:'',
+        genre:'',
         description: ''
       }
   }
@@ -19,11 +20,12 @@ export  default class HomePage extends Component {
 
   addNewArtist = async () => {
     const newArtist = {
-      artist: this.state.artistName,
-      description: this.state.description
+      name: this.state.name,
+      description: this.state.description,
+      genre: this.state.genre
     }
     try {
-      const res = await axios.post('http://localhost:3001/api/artist', newArtist)
+      const res = await axios.post('http://localhost:3001/api/artists', newArtist)
       console.log(res.data)
       const res2 = await axios.get('http://localhost:3001/api/artists')
       this.setState({
@@ -46,8 +48,9 @@ export  default class HomePage extends Component {
       event.preventDefault()
       this.setState({
         submitted : true,
-        artist:'',
-        description:''
+        name:'',
+        description:'',
+        genre:''
       })
     this.addNewArtist()
   }
@@ -64,10 +67,66 @@ updateSubmitted = ()=>{
   return (
     <div className='home-wrap'>
     <div className="Home">
-      <h1>Home</h1>
+      <h1>Apollo</h1>
     </div>
-      <h3 className='add'>Add Artist/Album</h3>
+      
+    <div><h3 className='add'>Add Artist/Album</h3>
+    <form className='form-body' onSubmit={this.handleSubmit}>
+    <input
+    type='text'
+    placeholder='Artist Name'
+    value={this.state.name}
+    onChange={this.handleChange}
+    name='name'
+    className='form-artist'
+    />
+
+<input
+    type='text'
+    placeholder='Artist Genre'
+    value={this.state.genre}
+    onChange={this.handleChange}
+    name='genre'
+    className='form-artist'
+    />
+
+
+  <input
+    type='text'
+    placeholder='Artist Description'
+    value={this.state.description}
+    onChange={this.handleChange}
+    name='description'
+    maxLength='200'
+    className='form-text'
+    />
+
+
+
+
+
+    {/* <textarea 
+    type='text'
+    placeholder='Artist Description'
+    value={this.state.description}
+    onChange={this.handleChange}
+    name='description'
+    maxLength='200'
+    className='form-text'
+    /> */}
+
+    <button type='submit' className='custom-btn'>Add</button>
+
+    {this.state.submitted && (
+      <button className='custom-btn view-post'><NavLink className='view-btn' to='/artists'>View Artists</NavLink></button>
+    )}
+
+    </form>
+    <div>
+      
     </div>
+  </div>
+  </div>
   );
 }
 }

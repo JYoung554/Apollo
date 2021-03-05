@@ -58,23 +58,6 @@ const getAlbum = async (req,res)=>{
     }
 }
 
-// const findAllArtists = async (req,res) =>{
-//     try {
-//       const posts = await Artist.find()
-//       return res.status(200).json({artists})
-//     } catch (error) {
-//       return res.status(500).send(error.message)
-//     }
-//   }
-
-//   const findAllAlbums = async (req,res) =>{
-//     try {
-//       const posts = await Album.find()
-//       return res.status(200).json({album})
-//     } catch (error) {
-//       return res.status(500).send(error.message)
-//     }
-//   }
 
 const deleteAlbum = async (req,res)=>{
     try {
