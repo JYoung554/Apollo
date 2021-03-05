@@ -10,6 +10,10 @@ background-attachment: fixed;
 background-position: center;
 background-size: cover;
 object-fit: cover;
+background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg);
+background-size: cover;
+text-align: center;
+height: 1000px;
 }
 .App {
   background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg);
@@ -46,7 +50,6 @@ object-fit: cover;
 }
 
 .post-body{
-  
   width: 300px;
   margin: 0 auto;
   display: flex;
@@ -72,6 +75,12 @@ object-fit: cover;
   width: 100vw;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg);
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 
