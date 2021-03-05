@@ -44,6 +44,7 @@ height: 1000px;
   width: 100vw;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: center;
   height: auto;
 }
 

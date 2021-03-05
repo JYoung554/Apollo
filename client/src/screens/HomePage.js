@@ -98,7 +98,7 @@ updateSubmitted = ()=>{
           placeholder='Years Active'
           value={this.state.yearsActive}
           onChange={this.handleChange}
-          name='years-active'
+          name='yearsActive'
           maxLength='200'
           className='form-artist'
         />
