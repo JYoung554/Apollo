@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 body{
+font-family: 'Permanent Marker', cursive;
 background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
 background-color: #73868cb5;
 height: auto;
@@ -20,7 +21,8 @@ height: 1000px;
   width: 200px;
   margin: 0 auto;
   margin-top: 15px;
-  color: aliceblue;
+  color: rgb(225, 124, 16);
+  font-family: 'Permanent Marker', cursive;
   background-image: linear-gradient(bottom, rgb(210, 244, 254) 25%, rgb(149, 194, 253) 100%);
 	background-image: -o-inear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
 	background-image: -moz-inear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
@@ -129,6 +131,7 @@ div.post-body.album{
   margin: 0 auto;
   margin-top: 15px;
   color: aliceblue;
+  font-family: 'Permanent Marker', cursive;
   background-image: linear-gradient(bottom, rgb(210, 244, 254) 25%, rgb(149, 194, 253) 100%);
 	background-image: -o-inear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
 	background-image: -moz-inear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
@@ -198,6 +201,11 @@ border-radius: 10%;
 
 .album{
   -ms-flex-align: center;
+}
+
+.intro{
+  color: rgb(230, 123, 29);
+  font-family: 'Permanent Marker', cursive;
 }
 
 /* .home-wrap{ background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
