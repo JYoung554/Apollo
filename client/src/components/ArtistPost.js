@@ -5,9 +5,7 @@ export default class ArtistPost extends Component {
 render(){
   console.log(this.props)
   const {artist,  onClick} = this.props
-  // const timestamp = createdAt
-  // const date = new Date(timestamp)
-  // const created = date.toDateString()
+
 
   return (
   

@@ -68,7 +68,7 @@ updateSubmitted = ()=>{
   return (
     <div className='home-wrap'>
     <div className="Home">
-      <h1 className='page-title'>Apollo</h1>
+      <h1 className='page-titleA'>Apollo</h1>
     </div>
       <section className='form-display'>
     <div className='add-div'>

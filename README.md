@@ -16,7 +16,7 @@
 
 
 ## Description
-This is a full-stack MERN application in the form of a music app that users can search for artists and find a detailed description of them as well as their recent works. 
+This is a full-stack MERN application in the form of a music app where users can post info about a commercial artist or album as well as their own works. 
 
 ### Technologies Used
 * React
@@ -28,7 +28,7 @@ This is a full-stack MERN application in the form of a music app that users can 
 
 ## Getting Started
 
-#### Clients will be sent to the Home Page where they can select a musical artist by either Artist Name, or Year. Clients will then be shown a result page where they can select their artist and will then be sent to the artist description page , will will show a brief bio of the artist and origin, as well as information and links to their recent works.
+#### Clients will be sent to the Home Page where they can add a musical artist by either Artist Name, Genre, Years Active and an image. Clients can also post Albums with info about the Name, Genre, Image, Artist Name, and release date.Clients can then click View Artist/Album to see their posts on the Posts Page.
 
 #### To see more, [click here](https://trello.com/b/IqrPXsEl/apollo) and visit my trello board to follow the development of this app.
 
@@ -36,13 +36,10 @@ This is a full-stack MERN application in the form of a music app that users can 
 
 ### ***Screenshots***
 
-#### Coming Soon
 
+#### Coming Soon/Future Updates
 
-***
-
-## Future Updates
-- Save Search history
+- Search Bar
 - Link to Spotify
 - Create Live Updates for Artists
 - Mobile-friendly

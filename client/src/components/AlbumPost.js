@@ -4,10 +4,7 @@ export default class AlbumPost extends Component {
 render(){
   console.log(this.props)
   const {album, onClick} = this.props
-  // const {artistName, artistGenre, image, description, onClick} = this.props
-  // const timestamp = createdAt
-  // const date = new Date(timestamp)
-  // const created = date.toDateString()
+
 
   return (
   
