@@ -5,6 +5,9 @@
 body{
 background-color: #73868cb5;
 height: auto;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
 }
 
 .App {
@@ -54,7 +57,9 @@ height:100vh;
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .artist-body{
