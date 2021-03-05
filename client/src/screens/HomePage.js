@@ -65,51 +65,53 @@ updateSubmitted = ()=>{
   return (
     <div className='home-wrap'>
     <div className="Home">
-      <h1>Apollo</h1>
+      <h1 className='page-title'>Apollo</h1>
     </div>
-      
-    <div><h3 className='add'>Add Artist</h3>
-    <form className='form-body' onSubmit={this.handleSubmit}>
-    <input
-    type='text'
-    placeholder='Artist Name'
-    value={this.state.name}
-    onChange={this.handleChange}
-    name='name'
-    className='form-artist'
-    />
+      <section className='form-display'>
+    <div className='add-div'>
+      <h3 className='add'>Add Artist</h3>
+      <form className='form-body' onSubmit={this.handleSubmit}>
+        <input
+          type='text'
+          placeholder='Artist Name'
+          value={this.state.name}
+          onChange={this.handleChange}
+          name='name'
+          className='form-artist'
+        />
 
-<input
-    type='text'
-    placeholder='Artist Genre'
-    value={this.state.genre}
-    onChange={this.handleChange}
-    name='genre'
-    className='form-artist'
-    />
+        <input
+          type='text'
+          placeholder='Artist Genre'
+          value={this.state.genre}
+          onChange={this.handleChange}
+          name='genre'
+          className='form-artist'
+        />
 
 
-  <input
-    type='text'
-    placeholder='Artist Description'
-    value={this.state.description}
-    onChange={this.handleChange}
-    name='description'
-    maxLength='200'
-    className='form-text'
-    />
+        <input
+          type='text'
+          placeholder='Artist Description'
+          value={this.state.description}
+          onChange={this.handleChange}
+          name='description'
+          maxLength='200'
+          className='form-artist'
+        />
 
-    <button type='submit' className='custom-btn'>Add</button>
+        <button type='submit' className='custom-btn'>Add</button>
 
-    {this.state.submitted && (
-      <button className='custom-btn view-post'><NavLink className='view-btn' to='/artists'>View Artists</NavLink></button>
-    )}
+      {this.state.submitted && (
+        <button className='custom-btn view-post'><NavLink className='view-btn' to='/artists'>View Artists</NavLink></button>
+      )}
 
-    </form>
-    <div>
-      <CreateAlbum/>
-    </div>
+      </form>
   </div>
+      <div className='add-div'>
+        <CreateAlbum/>
+      </div>
+      </section>
   </div>
   );
 }

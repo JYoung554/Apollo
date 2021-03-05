@@ -1,27 +1,91 @@
+body{
+background-color: #73868cb5;
+height: 100vh;
+}
+
 .App {
   background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
   background-size: cover;
   text-align: center;
+  height: 100vh;
 }
+
+
+
 
 .app-body{
   /* background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
   background-size: cover; */
   text-align: center;
 
+
 }
 
+/* .home{
+
+
+
+} */
+
 .post-body{
-  background-color: aqua;
+  
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid black ;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 
 .artist-body{
-  background-color: brown;
+  display:flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .add{
   color: brown;
 }
+
+.page-title{
+  color: aliceblue;
+
+}
+
+.nav{background-color: white;
+
+}
+
+.add-div{
+  display: flex;
+  
+
+
+}
+
+.form-body{
+  display: grid;
+  width: 75px;
+}
+
+.form-display{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
 
 /* .home-wrap{ background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
       background-size: cover;

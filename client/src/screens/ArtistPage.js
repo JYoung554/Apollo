@@ -44,7 +44,7 @@ export default class ArtistPage extends Component {
     }
 
 
-    
+
 
 
 
@@ -63,9 +63,11 @@ export default class ArtistPage extends Component {
 
       
     return(
-      <div className='artist-body'>
+      <div>
         <h1>Artist Page</h1>
+      <div className='artist-body'>
         {artists}
+      </div>
       </div>
     )
     }
