@@ -11,7 +11,7 @@ export  default class HomePage extends Component {
         albums: [],
         name:'',
         genre:'',
-        yearsActive: '',
+        yearsActive:'',
         image:''
       }
   }

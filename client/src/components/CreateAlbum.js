@@ -21,7 +21,7 @@ export  default class CreateAlbum extends Component {
       name: this.state.name,
       artist:this.state.artist,
       genre: this.state.genre,
-      releaseDate: this.state.release_date,
+      releaseDate: this.state.releaseDate,
       image: this.state.image
     }
     try {
@@ -128,7 +128,7 @@ updateSubmitted = ()=>{
           placeholder='Release-Date'
           value={this.state.releaseDate}
           onChange={this.handleChange}
-          name='release-date'
+          name='releaseDate'
           className='form-album'
         />
 
