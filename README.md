@@ -36,7 +36,7 @@ This is a full-stack MERN application in the form of a music app where users can
 
 ### ***Screenshots***
 
-![Apollo](Apollo.png)
+/*![Apollo](Apollo.png)*/
 
 #### Coming Soon/Future Updates
 
