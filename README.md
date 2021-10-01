@@ -5,7 +5,7 @@
 
 ***
 
-####  [Apollo Artist Info App](https://github.com/JYoung554/Apollo)
+####  [Apollo Artist Info App](https://rocky-chamber-64313.herokuapp.com/)
 
 ***
 
@@ -36,7 +36,7 @@ This is a full-stack MERN application in the form of a music app where users can
 
 ### ***Screenshots***
 
-![Apollo](Screen Shot 2021-03-05 at 1.12.38 PM.png)
+![Apollo](Apollo.png)
 
 #### Coming Soon/Future Updates
 
