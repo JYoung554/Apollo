@@ -1,17 +1,13 @@
-# Apollo
 # Apollo Artist Info App
-## Date: March 1, 2021
 #### By: Jonte' Fears
 
 ***
 
-####  [Apollo Artist Info App](https://rocky-chamber-64313.herokuapp.com/)
 
-***
+### By: Jonte' Fears
+[LinkedIn](https://www.linkedin.com/in/jonte-fears-a70070156/) | [GitHub](https://github.com/JYoung554)
 
-### Developers
-
-* ####  [Jonte Fears](https://github.com/JYoung554)
+[Live Site](https://rocky-chamber-64313.herokuapp.com/)
 
 
 
@@ -35,13 +31,5 @@ This is a full-stack MERN application in the form of a music app where users can
 ***
 
 
-#### Coming Soon/Future Updates
 
-- Search Bar
-- Link to Spotify
-- Create Live Updates for Artists
-- Mobile-friendly
-- Sign In
-
-## Credits
 
