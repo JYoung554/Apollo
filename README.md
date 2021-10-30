@@ -5,7 +5,7 @@
 
 ![Apollo](https://github.com/JYoung554/Apollo/blob/main/Screen%20Shot%202021-10-30%20at%201.01.06%20PM.png)
 
-### By: Jonte' Fears
+### Apollo
 [LinkedIn](https://www.linkedin.com/in/jonte-fears-a70070156/) | [GitHub](https://github.com/JYoung554)
 
 [Live Site](https://rocky-chamber-64313.herokuapp.com/)
