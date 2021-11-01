@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ArtistPost from '../components/ArtistPost'
 import { Route, } from 'react-router-dom'
 import axios from 'axios'
+import { BASE_URL } from '../globals'
 
 export default class ArtistPage extends Component {
   constructor(props){
@@ -16,7 +17,7 @@ export default class ArtistPage extends Component {
 
     getAllArtists = async () => {
       try {
-        const res = await axios.get('http://localhost:3001/api/artists')
+        const res = await axios.get(`${BASE_URL}/api/artists`)
         console.log(res)
         this.setState({
           artists: res.data.artists
@@ -30,10 +31,10 @@ export default class ArtistPage extends Component {
   
       try {
         const res = await axios.delete(
-          `http://localhost:3001/api/artists/${artistId}`
+          `${BASE_URL}/api/artists/${artistId}`
         )
         console.log(res.data)
-        const res2 = await axios.get('http://localhost:3001/api/artists')
+        const res2 = await axios.get(`${BASE_URL}/api/artists`)
         this.setState({
           artists: res2.data.artists
         })
