@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AlbumPost from '../components/AlbumPost'
 import axios from 'axios'
+import {BASE_URL} from '../globals'
 
 export default class AlbumPage extends Component {
   constructor(props){
@@ -15,7 +16,7 @@ export default class AlbumPage extends Component {
 
   getAllAlbums = async () => {
     try {
-      const res = await axios.get('http://localhost:3001/api/albums')
+      const res = await axios.get(`${BASE_URL}/api/albums`)
       console.log(res)
       this.setState({
         albums: res.data.album
@@ -29,9 +30,9 @@ export default class AlbumPage extends Component {
   
     try {
       const res = await axios.delete(
-        `http://localhost:3001/api/albums/${albumId}`
+        `${BASE_URL}/api/albums/${albumId}`
       )
-      const res2 = await axios.get('http://localhost:3001/api/albums')
+      const res2 = await axios.get(`${BASE_URL}/api/albums`)
       this.setState({
         albums: res2.data.album
       })
