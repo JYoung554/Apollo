@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-<<<<<<< HEAD
 
 @media screen and (max-width: 720px) {
   body {
@@ -46,8 +45,6 @@ height: 1000px;
 }
 
 .page-titleA{
-=======
-body {
   font-family: 'Permanent Marker', cursive;
   background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg);
   background-color: #f9fbfc;
@@ -63,7 +60,7 @@ body {
 }
 
 .page-titleA {
->>>>>>> 26b49e1f6bb4c1c6d33304ba7b27c8b510b6d8ba
+
   width: 200px;
   margin: 0 auto;
   margin-top: 15px;
