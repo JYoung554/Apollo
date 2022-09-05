@@ -2,6 +2,33 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+
+@media screen and (max-width: 720px) {
+  body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 1080px;
+    text-shadow: 2px 2px 2px #2b2b2b;
+    max-width:720px;
+  };
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 1080px;
+    text-shadow: 2px 2px 2px #2b2b2b;
+    max-width:720px;
+  };
+}
+
+
+
 body{
 font-family: 'Permanent Marker', cursive;
 background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
