@@ -69,26 +69,26 @@ export default class CreateAlbum extends Component {
         <section className="form-display">
           <div className="add-div">
             <h3 className="add">Add Album</h3>
-            <form className="form-body" onSubmit={this.handleSubmit}>
-              <input
-                type="text"
-                placeholder="Album Name"
-                value={this.state.name}
-                onChange={this.handleChange}
-                name="name"
-                className="form-album"
-              />
-
-              <input
-                type="text"
-                placeholder="Album Genre"
-                value={this.state.genre}
-                onChange={this.handleChange}
-                name="genre"
-                className="form-album"
-              />
-
-              {/* <input
+            <form className="form-body2" onSubmit={this.handleSubmit}>
+              <div className="album-wrap">
+                Album
+                <input
+                  type="text"
+                  placeholder="Album Name"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                  name="name"
+                  className="form-album"
+                />
+                <input
+                  type="text"
+                  placeholder="Album Genre"
+                  value={this.state.genre}
+                  onChange={this.handleChange}
+                  name="genre"
+                  className="form-album"
+                />
+                {/* <input
     type='text'
     placeholder='Album Description'
     value={this.state.description}
@@ -97,47 +97,43 @@ export default class CreateAlbum extends Component {
     maxLength='200'
     className='form-text'
     /> */}
-
-              <input
-                type="text"
-                placeholder="Album Image"
-                value={this.state.image}
-                onChange={this.handleChange}
-                name="image"
-                maxLength="200"
-                className="form-album"
-              />
-
-              <input
-                type="text"
-                placeholder="Artist Name"
-                value={this.state.artist}
-                onChange={this.handleChange}
-                name="artist"
-                maxLength="200"
-                className="form-album"
-              />
-
-              <input
-                type="text"
-                placeholder="Release-Date"
-                value={this.state.releaseDate}
-                onChange={this.handleChange}
-                name="releaseDate"
-                className="form-album"
-              />
-
-              <button type="submit" className="custom-btn">
-                Add
-              </button>
-
-              {this.state.submitted && (
-                <button className="custom-btn view-post">
-                  <NavLink className="view-btn" to="/albums">
-                    View Albums
-                  </NavLink>
+                <input
+                  type="text"
+                  placeholder="Album Image"
+                  value={this.state.image}
+                  onChange={this.handleChange}
+                  name="image"
+                  maxLength="200"
+                  className="form-album"
+                />
+                <input
+                  type="text"
+                  placeholder="Artist Name"
+                  value={this.state.artist}
+                  onChange={this.handleChange}
+                  name="artist"
+                  maxLength="200"
+                  className="form-album"
+                />
+                <input
+                  type="text"
+                  placeholder="Release-Date"
+                  value={this.state.releaseDate}
+                  onChange={this.handleChange}
+                  name="releaseDate"
+                  className="form-album"
+                />
+                <button type="submit" className="custom-btn">
+                  Add
                 </button>
-              )}
+                {this.state.submitted && (
+                  <button className="custom-btn view-post">
+                    <NavLink className="view-btn" to="/albums">
+                      View Albums
+                    </NavLink>
+                  </button>
+                )}
+              </div>
             </form>
             <div></div>
           </div>

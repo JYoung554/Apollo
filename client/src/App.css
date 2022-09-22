@@ -31,7 +31,7 @@
 
 body{
 font-family: 'Permanent Marker', cursive;
-background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg) ;
+background-image: url(https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) ;
 background-color: #f9fbfc;
 height: auto;
 background-repeat: no-repeat;
@@ -52,11 +52,10 @@ height: 1000px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
   object-fit: cover;
   background-size: cover;
   text-align: center;
-  height: 1000px;
+  height: 100px;
 }
 
 .page-titleA {
@@ -64,29 +63,29 @@ height: 1000px;
   width: 200px;
   margin: 0 auto;
   margin-top: 15px;
-  color: rgb(225, 124, 16);
-  font-family: 'Permanent Marker', cursive;
+  color: rgb(232, 232, 250);
+  font-family: 'Futura', cursive;
   background-image: linear-gradient(
     bottom,
     rgb(210, 244, 254) 25%,
     rgb(149, 194, 253) 100%
   );
-  background-image: -o-inear-gradient(
+  background-image: -o-linear-gradient(
     bottom,
     rgb(210, 244, 254) 25%,
     rgb(149, 194, 253) 100%
   );
-  background-image: -moz-inear-gradient(
+  background-image: -moz-linear-gradient(
     bottom,
     rgb(210, 244, 254) 25%,
     rgb(149, 194, 253) 100%
   );
-  background-image: -webkit-inear-gradient(
+  background-image: -webkit-linear-gradient(
     bottom,
     rgb(210, 244, 254) 25%,
     rgb(149, 194, 253) 100%
   );
-  background-image: -ms-inear-gradient(
+  background-image: -ms-linear-gradient(
     bottom,
     rgb(210, 244, 254) 25%,
     rgb(149, 194, 253) 100%
@@ -126,17 +125,35 @@ div.post-body.album {
 
 } */
 
+
+.home-wrap{
+  position:relative;
+}
 .album-body {
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-
+    flex-direction: column;
   width: 100vw;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   height: auto;
 }
+
+.image{
+  display:grid;
+  justify-content:left;
+  align-content:left;
+  margin:30;
+  background-image: url(https://www.pngitem.com/pimgs/m/134-1345781_pop-artists-pop-music-artists-collage-hd-png.png) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  width:650px;
+  height:600px;
+}
+
 
 .post-body {
   height: auto;
@@ -171,11 +188,14 @@ div.post-body.album {
 }
 
 .add {
+  display:grid;
+  Justify-content:center;
+  align-content:center;
   color: rgb(223, 223, 223);
   position: absolute;
   top: 125px;
-  font-family: 'Anton', sans-serif;
-  margin-top: 4px;
+  font-family: 'Futura', sans-serif;
+  margin-top: 4px auto;
   font-size: 25px;
 }
 
@@ -228,15 +248,37 @@ div.post-body.album {
 
 .add-div {
   display: flex;
+  justify-content:center;
+  align-content:center;
+  width:500px;
 }
 
-.add-div2 {
-  display: flex;
+.form-display{
+display:grid;
+Justify-content:center;
+align-content:center;
+zoom:0.8;
+background-color:#f68349;
+background-size:auto;
+border-radius:10px;
 }
 
 .form-body {
   display: grid;
-  width: 75px;
+  position:relative;
+  padding:25px;
+  margin:50px;
+  margin-left:625px;
+  width: 500px;
+}
+
+
+.form-body2 {
+  display: grid;
+  width: 500px;
+  margin-left:250px;
+  padding:25px;
+  margin:50px;
 }
 
 .album-body {
@@ -245,10 +287,86 @@ div.post-body.album {
   margin-bottom: 30px;
 }
 
+.add-container{
+  display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
 .form-display {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.artist-wrap{
+  display: grid;
+  flex-direction: row;
+  justify-content: space-around;
+  position:absolute;
+  left:50px;
+  top:-575px;
+  z-index:8;
+  zoom:0.5;
+}
+.form-artist {
+  background-color:#303132;
+  margin:0px;
+  padding:30px;
+  border:0;
+  width:540px;
+  height:233px;
+  font-size:50px;
+  color:aliceblue;
+  }
+
+.album-wrap{
+  display: grid;
+  flex-direction: row;
+  justify-content: space-around;
+  position:absolute;
+  right:0px;
+  bottom:-5px;
+  zoom:0.5;
+  z-index:8;
+}
+
+  .form-album {
+    background-color:#303132;
+    margin:0px;
+    padding:30px;
+    border:0;
+    width:845px;
+    height:235px;
+    font-size:50px;
+    }
+
+
+.add-div2{
+  display:flex;
+  position:relative;
+  margin:10px;
+  margin-right:400px;
+  width:500px;
+}
+.albumImage{
+  display:grid;
+  justify-content:left;
+  align-content:left;
+  position:absolute;
+  margin:-11px;
+  background-image: url(https://www.rollingstone.com/wp-content/uploads/2019/12/RS-BestAlbumofDecade.jpg?w=1581&h=1054&crop=1) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  left:300px;
+  bottom:1px;
+  width:650px;
+  height:600px;
+}
+
+.input.placeholder{
+  color:aliceblue;
 }
 
 .image-source {
@@ -274,8 +392,11 @@ div.post-body.album {
 }
 
 .intro {
-  color: rgb(230, 123, 29);
-  font-family: 'Permanent Marker', cursive;
+  display:grid;
+  Justify-content:center;
+  align-content:center;
+  color: rgb(232, 232, 250);
+  font-family: 'Futura', cursive;
 }
 
 .custom-btn {
