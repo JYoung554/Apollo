@@ -11,12 +11,12 @@
     justify-content: center;
     align-content: center;
     margin: auto;
-    width: 52.78vw;
+    width: 1080px;
     text-shadow: 2px 2px 2px #2b2b2b;
-    max-width:35.19vw;
+    max-width:1080px;
   };
   .form-display{
-    width:52.78vw;
+    width:1080px;
   }
 }
 
@@ -272,7 +272,6 @@ Justify-content:center;
 align-content:center;
 zoom:0.8;
 background-color: #767676;
-width:1080px;
 background-size:auto;
 border-radius:10px;
 }
