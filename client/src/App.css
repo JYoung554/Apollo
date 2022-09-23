@@ -264,6 +264,7 @@ div.post-body.album {
 }
 
 .form-display{
+  position:relative;
 display:grid;
 Justify-content:center;
 align-content:center;
