@@ -165,7 +165,7 @@ div.post-body.album {
 
 .post-body {
   height: auto;
-  width: 300px;
+  width: 14.64vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -208,7 +208,7 @@ div.post-body.album {
 }
 
 .page-title {
-  width: 200px;
+  width: 9.76vw;
   margin: 0 auto;
   margin-top: 15px;
   color: rgb(239, 241, 244);
@@ -263,7 +263,7 @@ div.post-body.album {
   display: flex;
   justify-content:center;
   align-content:center;
-  width:500px;
+  width:24.41vw;
 }
 
 .form-display{
@@ -282,13 +282,13 @@ border-radius:10px;
   padding:25px;
   margin:50px;
   margin-left:625px;
-  width: 500px;
+  width: 24.41vw;
 }
 
 
 .form-body2 {
   display: grid;
-  width: 500px;
+  width: 24.41vw;
   margin-left:250px;
   padding:25px;
   margin:50px;
@@ -326,8 +326,8 @@ justify-content: space-around;
   margin:0px;
   padding:30px;
   border:0;
-  width:540px;
-  height:233px;
+  width:26.36vw;
+  height:25.18vh;
   font-size:50px;
   color:aliceblue;
   }
@@ -348,8 +348,8 @@ justify-content: space-around;
     margin:0px;
     padding:30px;
     border:0;
-    width:845px;
-    height:235px;
+    width:41.25vw;
+    height:25.40vh;
     font-size:50px;
     }
 
@@ -359,7 +359,7 @@ justify-content: space-around;
   position:relative;
   margin:10px;
   margin-right:400px;
-  width:500px;
+  width:24.41vw;
 }
 .albumImage{
   display:grid;
