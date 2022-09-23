@@ -50,7 +50,7 @@ background-size: cover;
 object-fit: cover;
 background-size: cover;
 text-align: center;
-height: 1000px;
+height: 108.10vh;
 }
 
 .page-titleA{
@@ -63,12 +63,12 @@ height: 1000px;
   object-fit: cover;
   background-size: cover;
   text-align: center;
-  height: 100px;
+  height: 10.8vh;
 }
 
 .page-titleA {
 
-  width: 200px;
+  width: 9.76vw;
   margin: 0 auto;
   margin-top: 15px;
   color: rgb(232, 232, 250);
@@ -113,7 +113,7 @@ height: 1000px;
 .App {
   background-size: cover;
   text-align: center;
-  height: 1000px;
+  height: 100.8vh;
 }
 
 div.post-body.album {
@@ -374,8 +374,8 @@ justify-content: space-around;
   object-fit: cover;
   left:300px;
   bottom:1px;
-  width:650px;
-  height:600px;
+  width:31.73vw;
+  height:64.86vh;
 }
 
 .input.placeholder{
@@ -384,8 +384,8 @@ justify-content: space-around;
 
 .image-source {
   background-size: cover;
-  height: 300px;
-  width: 300px;
+  height: 32.43vh;
+  width: 14.64vw;
   object-fit: cover;
 }
 
