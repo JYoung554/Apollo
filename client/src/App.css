@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 
+
+
 @media screen and (max-width: 720px) {
   body {
     display: grid;
@@ -25,14 +27,18 @@
     text-shadow: 2px 2px 2px #2b2b2b;
     max-width:720px;
   };
+  .form-display{
+    zoom:0.5;
+  }
 }
 
 
 
+
 body{
-font-family: 'Permanent Marker', cursive;
+font-family: 'Futura';
 background-image: url(https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) ;
-background-color: #f9fbfc;
+background-color: #767676;
 height: auto;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -45,9 +51,8 @@ height: 1000px;
 }
 
 .page-titleA{
-  font-family: 'Permanent Marker', cursive;
-  background-image: url(https://www.freevector.com/uploads/vector/preview/2515/FreeVector-Music-Vector-Record-Player.jpg);
-  background-color: #f9fbfc;
+  font-family: 'Futura';
+  background-color: #939494;
   height: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -99,7 +104,7 @@ height: 1000px;
   margin-bottom: 20px;
   padding: 8px 30px;
   position: relative;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .App {
@@ -204,7 +209,7 @@ div.post-body.album {
   margin: 0 auto;
   margin-top: 15px;
   color: rgb(239, 241, 244);
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Futura';
   background-image: linear-gradient(
     bottom,
     rgb(210, 244, 254) 25%,
@@ -243,8 +248,13 @@ div.post-body.album {
 
 .nav {
   background-color: rgba(191, 70, 70, 0);
+  font-family: 'Futura';
   border-radius: 10%;
 }
+
+
+
+
 
 .add-div {
   display: flex;
@@ -258,7 +268,7 @@ display:grid;
 Justify-content:center;
 align-content:center;
 zoom:0.8;
-background-color:#f68349;
+background-color: #767676;
 background-size:auto;
 border-radius:10px;
 }
@@ -396,7 +406,7 @@ justify-content: space-around;
   Justify-content:center;
   align-content:center;
   color: rgb(232, 232, 250);
-  font-family: 'Futura', cursive;
+  font-family: 'Futura'
 }
 
 .custom-btn {
