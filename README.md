@@ -1,27 +1,29 @@
 # Apollo Artist Info App
+
 #### By: Jonte' Fears
 
-***
+---
 
 ![Apollo](https://github.com/JYoung554/Apollo/blob/main/Screen%20Shot%202021-10-30%20at%201.01.06%20PM.png)
 
 ### Apollo
+
 [LinkedIn](https://www.linkedin.com/in/jonte-fears-a70070156/) | [GitHub](https://github.com/JYoung554)
 
-[Live Site](https://rocky-chamber-64313.herokuapp.com/)
-
-
+[Live Site](https://tranquil-reef-21193.herokuapp.com/)
 
 ## Description
-This is a full-stack MERN application in the form of a music app where users can post info about a commercial artist or album as well as their own works. 
+
+This is a full-stack MERN application in the form of a music app where users can post info about a commercial artist or album as well as their own works.
 
 ### Technologies Used
-* React
-* CSS
-* MongoDB / Mongoose
-* Express / Node
 
-***
+- React
+- CSS
+- MongoDB / Mongoose
+- Express / Node
+
+---
 
 ## Getting Started
 
@@ -29,8 +31,4 @@ This is a full-stack MERN application in the form of a music app where users can
 
 #### To see more, [click here](https://trello.com/b/IqrPXsEl/apollo) and visit my trello board to follow the development of this app.
 
-***
-
-
-
-
+---
