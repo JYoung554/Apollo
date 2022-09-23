@@ -5,19 +5,18 @@
 
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1080px) {
   body {
     display: grid;
     justify-content: center;
     align-content: center;
     margin: auto;
-    width: 70;
+    width: 70vw;
     text-shadow: 2px 2px 2px #2b2b2b;
     max-width:720px;
   };
   .form-display{
-    width:1080px;
-    zoom:0.7;
+    width:50vw;
   }
 }
 
