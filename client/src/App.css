@@ -158,8 +158,8 @@ div.post-body.album {
   background-position: center;
   background-size: cover;
   object-fit: cover;
-  width:650px;
-  height:600px;
+  width:32vw;
+  height:65vh;
 }
 
 
