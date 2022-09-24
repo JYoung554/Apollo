@@ -11,12 +11,13 @@
     justify-content: center;
     align-content: center;
     margin: auto;
-    width: 1080px;
+    width: 80%;
     text-shadow: 2px 2px 2px #2b2b2b;
     max-width:1080px;
   };
   .form-display{
     width:1080px;
+    zoom:0.7;
   }
 }
 
@@ -50,7 +51,7 @@ background-size: cover;
 object-fit: cover;
 background-size: cover;
 text-align: center;
-height: 108.10vh;
+height: 1000px;
 }
 
 .page-titleA{
@@ -63,12 +64,12 @@ height: 108.10vh;
   object-fit: cover;
   background-size: cover;
   text-align: center;
-  height: 10.8vh;
+  height: 100px;
 }
 
 .page-titleA {
 
-  width: 9.76vw;
+  width: 200px;
   margin: 0 auto;
   margin-top: 15px;
   color: rgb(232, 232, 250);
@@ -113,7 +114,7 @@ height: 108.10vh;
 .App {
   background-size: cover;
   text-align: center;
-  height: 100.8vh;
+  height: 1000px;
 }
 
 div.post-body.album {
@@ -137,6 +138,21 @@ div.post-body.album {
 .home-wrap{
   position:relative;
 }
+
+
+.form-display{
+  position:relative;
+display:grid;
+Justify-content:center;
+align-content:center;
+zoom:0.8;
+background-color: #767676;
+background-size:auto;
+border-radius:10px;
+}
+
+
+
 .album-body {
   margin: 0 auto;
   display: flex;
@@ -158,14 +174,15 @@ div.post-body.album {
   background-position: center;
   background-size: cover;
   object-fit: cover;
-  width:32vw;
-  height:65vh;
+  width:650px;
+  height:600px;
+
 }
 
 
 .post-body {
   height: auto;
-  width: 14.64vw;
+  width: 300px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -208,7 +225,7 @@ div.post-body.album {
 }
 
 .page-title {
-  width: 9.76vw;
+  width: 200px;
   margin: 0 auto;
   margin-top: 15px;
   color: rgb(239, 241, 244);
@@ -263,18 +280,10 @@ div.post-body.album {
   display: flex;
   justify-content:center;
   align-content:center;
-  width:24.41vw;
+  width:500px;
 }
 
-.form-display{
-display:grid;
-Justify-content:center;
-align-content:center;
-zoom:0.8;
-background-color: #767676;
-background-size:auto;
-border-radius:10px;
-}
+
 
 .form-body {
   display: grid;
@@ -282,13 +291,13 @@ border-radius:10px;
   padding:25px;
   margin:50px;
   margin-left:625px;
-  width: 24.41vw;
+  width: 500px;
 }
 
 
 .form-body2 {
   display: grid;
-  width: 24.41vw;
+  width: 500px;
   margin-left:250px;
   padding:25px;
   margin:50px;
@@ -304,6 +313,7 @@ border-radius:10px;
   display: flex;
 flex-direction: row;
 justify-content: space-around;
+width:80%;
 }
 .form-display {
   display: flex;
@@ -326,8 +336,8 @@ justify-content: space-around;
   margin:0px;
   padding:30px;
   border:0;
-  width:26.36vw;
-  height:25.18vh;
+  width:540px;
+  height:233px;
   font-size:50px;
   color:aliceblue;
   }
@@ -348,8 +358,8 @@ justify-content: space-around;
     margin:0px;
     padding:30px;
     border:0;
-    width:41.25vw;
-    height:25.40vh;
+    width:845px;
+    height:235px;
     font-size:50px;
     }
 
@@ -359,7 +369,7 @@ justify-content: space-around;
   position:relative;
   margin:10px;
   margin-right:400px;
-  width:24.41vw;
+  width:500px;
 }
 .albumImage{
   display:grid;
@@ -374,8 +384,8 @@ justify-content: space-around;
   object-fit: cover;
   left:300px;
   bottom:1px;
-  width:31.73vw;
-  height:64.86vh;
+  width:650px;
+  height:600px;
 }
 
 .input.placeholder{
@@ -384,8 +394,8 @@ justify-content: space-around;
 
 .image-source {
   background-size: cover;
-  height: 32.43vh;
-  width: 14.64vw;
+  height: 300px;
+  width: 300px;
   object-fit: cover;
 }
 

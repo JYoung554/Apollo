@@ -68,65 +68,63 @@ export default class HomePage extends Component {
           <h1 className="page-titleA">APOLLO!</h1>
         </div>
         <section className="form-display">
-          <div className="add-container">
-            <div className="image">
-              <div className="add-div"></div>
-              <h3 className="add">Add Artist</h3>
-              <form className="form-body" onSubmit={this.handleSubmit}>
-                <div className="artist-wrap">
-                  Artist
-                  <input
-                    type="text"
-                    placeholder="Artist Name"
-                    value={this.state.name}
-                    onChange={this.handleChange}
-                    name="name"
-                    className="form-artist"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Artist Genre"
-                    value={this.state.genre}
-                    onChange={this.handleChange}
-                    name="genre"
-                    className="form-artist"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Years Active"
-                    value={this.state.yearsActive}
-                    onChange={this.handleChange}
-                    name="yearsActive"
-                    maxLength="200"
-                    className="form-artist"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Artist Image"
-                    value={this.state.image}
-                    onChange={this.handleChange}
-                    name="image"
-                    maxLength="200"
-                    className="form-artist"
-                  />
-                  <button type="submit" className="custom-btn">
-                    Add
+          <div className="image">
+            <div className="add-div"></div>
+            <h3 className="add">Add Artist</h3>
+            <form className="form-body" onSubmit={this.handleSubmit}>
+              <div className="artist-wrap">
+                Artist
+                <input
+                  type="text"
+                  placeholder="Artist Name"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                  name="name"
+                  className="form-artist"
+                />
+                <input
+                  type="text"
+                  placeholder="Artist Genre"
+                  value={this.state.genre}
+                  onChange={this.handleChange}
+                  name="genre"
+                  className="form-artist"
+                />
+                <input
+                  type="text"
+                  placeholder="Years Active"
+                  value={this.state.yearsActive}
+                  onChange={this.handleChange}
+                  name="yearsActive"
+                  maxLength="200"
+                  className="form-artist"
+                />
+                <input
+                  type="text"
+                  placeholder="Artist Image"
+                  value={this.state.image}
+                  onChange={this.handleChange}
+                  name="image"
+                  maxLength="200"
+                  className="form-artist"
+                />
+                <button type="submit" className="custom-btn">
+                  Add
+                </button>
+                {this.state.submitted && (
+                  <button className="custom-btn view-post">
+                    <NavLink className="view-btn" to="/artists">
+                      View Artists
+                    </NavLink>
                   </button>
-                  {this.state.submitted && (
-                    <button className="custom-btn view-post">
-                      <NavLink className="view-btn" to="/artists">
-                        View Artists
-                      </NavLink>
-                    </button>
-                  )}
-                </div>
-              </form>
-            </div>
-            <div className="add-div2">
-              <div className="albumImage"></div>
-            </div>
-            <CreateAlbum />
+                )}
+              </div>
+            </form>
           </div>
+          <div className="add-div2">
+            <div className="albumImage"></div>
+          </div>
+          <CreateAlbum />
         </section>
         <h1 className="intro">Add Your Album or Artist!</h1>
       </div>
