@@ -11,7 +11,7 @@
     justify-content: center;
     align-content: center;
     margin: auto;
-    width: 80%;
+    width: 70;
     text-shadow: 2px 2px 2px #2b2b2b;
     max-width:1080px;
   };
@@ -40,6 +40,9 @@
 
 
 body{
+  display:grid;
+  justify-content:center;
+  align-content:center;
 font-family: 'Futura';
 background-image: url(https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) ;
 background-color: #767676;
@@ -135,22 +138,25 @@ div.post-body.album {
 } */
 
 
-.home-wrap{
+.home-body1{
   position:relative;
+  display: grid;
+  justify-content: center;
+  align-content:center;
+  height:600px;
+  width:250px;
+  z-index:8;
 }
 
-
-.form-display{
+.home-wrap2{
   position:relative;
-display:grid;
-Justify-content:center;
-align-content:center;
-zoom:0.8;
-background-color: #767676;
-background-size:auto;
-border-radius:10px;
+  display: grid;
+  justify-content:center;
+  align-content:center;
+  height:600px;
+  width:600px;
+  z-index:8;
 }
-
 
 
 .album-body {
@@ -174,9 +180,9 @@ border-radius:10px;
   background-position: center;
   background-size: cover;
   object-fit: cover;
+  z-index:8;
   width:650px;
   height:600px;
-
 }
 
 
@@ -218,7 +224,6 @@ border-radius:10px;
   align-content:center;
   color: rgb(223, 223, 223);
   position: absolute;
-  top: 125px;
   font-family: 'Futura', sans-serif;
   margin-top: 4px auto;
   font-size: 25px;
@@ -283,26 +288,33 @@ border-radius:10px;
   width:500px;
 }
 
+.form-display{
+display:grid;
+position:relative;
+Justify-content:center;
+align-content:center;
+zoom:0.8;
+background-color: #767676;
+background-size:auto;
+border-radius:10px;
+}
 
-
-.form-body {
+.form-body1 {
   display: grid;
   position:relative;
   padding:25px;
-  margin:50px;
-  margin-left:625px;
-  width: 500px;
+  z-index:8;
+  width: 250px;
+  height:500px;
 }
-
 
 .form-body2 {
   display: grid;
-  width: 500px;
-  margin-left:250px;
-  padding:25px;
-  margin:50px;
+  position:absolute;
+  z-index:8;
+  width: 250px;
+  height:500px;
 }
-
 .album-body {
   margin: 0 auto;
   margin-top: 30px;
@@ -313,7 +325,6 @@ border-radius:10px;
   display: flex;
 flex-direction: row;
 justify-content: space-around;
-width:80%;
 }
 .form-display {
   display: flex;
@@ -326,8 +337,6 @@ width:80%;
   flex-direction: row;
   justify-content: space-around;
   position:absolute;
-  left:50px;
-  top:-575px;
   z-index:8;
   zoom:0.5;
 }
@@ -336,6 +345,7 @@ width:80%;
   margin:0px;
   padding:30px;
   border:0;
+  z-index:8;
   width:540px;
   height:233px;
   font-size:50px;
@@ -344,11 +354,9 @@ width:80%;
 
 .album-wrap{
   display: grid;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content:center;
+  align-content:center;
   position:absolute;
-  right:0px;
-  bottom:-5px;
   zoom:0.5;
   z-index:8;
 }
@@ -358,6 +366,7 @@ width:80%;
     margin:0px;
     padding:30px;
     border:0;
+    z-index:8;
     width:845px;
     height:235px;
     font-size:50px;
@@ -365,27 +374,24 @@ width:80%;
 
 
 .add-div2{
-  display:flex;
+  display:grid;
   position:relative;
   margin:10px;
-  margin-right:400px;
+  margin-right:0;
   width:500px;
 }
 .albumImage{
   display:grid;
   justify-content:left;
   align-content:left;
-  position:absolute;
-  margin:-11px;
   background-image: url(https://www.rollingstone.com/wp-content/uploads/2019/12/RS-BestAlbumofDecade.jpg?w=1581&h=1054&crop=1) ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   object-fit: cover;
-  left:300px;
-  bottom:1px;
-  width:650px;
-  height:600px;
+  z-index:8;
+  width:100%;
+  height:100%;
 }
 
 .input.placeholder{

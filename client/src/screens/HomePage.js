@@ -69,9 +69,10 @@ export default class HomePage extends Component {
         </div>
         <section className="form-display">
           <div className="image">
-            <div className="add-div"></div>
             <h3 className="add">Add Artist</h3>
-            <form className="form-body" onSubmit={this.handleSubmit}>
+          </div>
+          <div className="home-body1">
+            <form className="form-body1" onSubmit={this.handleSubmit}>
               <div className="artist-wrap">
                 Artist
                 <input
@@ -121,8 +122,11 @@ export default class HomePage extends Component {
               </div>
             </form>
           </div>
+
           <div className="add-div2">
-            <div className="albumImage"></div>
+            <div className="albumImage">
+              <h3 className="add">Add Album</h3>
+            </div>
           </div>
           <CreateAlbum />
         </section>
