@@ -12,13 +12,14 @@
     justify-content: space-between;
     text-align: center;
     margin: auto;
-    width: 70;
+    width: 70%;
     text-shadow: 2px 2px 2px #2b2b2b;
     max-width:1080px;
   };
   .form-display{
-    width:1080px;
-    zoom:0.7;
+    width:0%;
+    padding-top:75%;
+    zoom:0.5;
   }
 }
 
@@ -302,18 +303,22 @@ border-radius:10px;
 
 .form-body1 {
   display: grid;
-  position:relative;
+  position:absolute;
   padding:25px;
   z-index:8;
-  width: 250px;
+  width: 20%;
   height:500px;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
 }
 
 .form-body2 {
   display: grid;
   position:absolute;
   z-index:8;
-  width: 250px;
+  width: 20%;
   height:500px;
 }
 .album-body {
@@ -329,6 +334,7 @@ justify-content: space-around;
 }
 .form-display {
   display: flex;
+  position:relative;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -425,7 +431,9 @@ justify-content: space-around;
   display:grid;
   Justify-content:center;
   align-content:center;
-  color: rgb(232, 232, 250);
+  color: rgb(168, 168, 252);
+  border-color:#2b2b2b;
+  border-width:0.2em;
   font-family: 'Futura'
 }
 
