@@ -65,7 +65,9 @@ export default class CreateAlbum extends Component {
     const albums = this.state.allAlbums
     return (
       <div className="home-wrap2">
+        A
         <form className="form-body2" onSubmit={this.handleSubmit}>
+          {' '}
           <div className="album-wrap">
             Album
             <input

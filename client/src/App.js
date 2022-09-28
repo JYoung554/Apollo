@@ -9,10 +9,22 @@ import Nav from './components/Nav'
 
 export default class App extends Component {
   render() {
+    window.onresize = function () {
+      let box = document.getElementById('size')
+      const minSize = 0.5
+      const maxSize = 1
+      let scale = Math.min(
+        window.innerWidth / (box.offsetWidth + 8),
+        window.innerHeight / (box.offsetHeight + 8)
+      )
+      scale = Math.min(maxSize, Math.max(minSize, scale))
+      document.documentElement.style.setProperty('--pageScale', scale)
+    }
+
     return (
       <div className="App">
         <Nav />
-        <main className="app-body">
+        <main className="app-body" id="size">
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/artists" component={ArtistPage} />

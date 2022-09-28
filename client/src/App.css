@@ -3,7 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 
-
+:root{
+  --pageScale: 1;
+}
+#size{
+  transform: scale(var(--pageScale))
+}
 
 @media screen and (max-width: 1080px) {
   body {
@@ -17,11 +22,24 @@
     max-width:1080px;
   };
   .form-display{
-    width:0%;
+    width:100%;
     padding-top:75%;
     zoom:0.5;
   }
+  .form-album {
+    width:20vw;
+      background-color:#057ef7;
+    }
+
 }
+
+@media screen and (min-width: 1080px){
+  .form-album {
+    width:20vw;
+      background-color:#057ef7;
+    }
+}
+
 
 /*@media screen and (min-width: 1080px) {
   body {
@@ -140,23 +158,24 @@ div.post-body.album {
 } */
 
 
+
 .home-body1{
-  position:relative;
   display: grid;
+  position:relative;
   justify-content: center;
   align-content:center;
-  height:600px;
-  width:250px;
+  width:50%;
+  padding:1px;
   z-index:8;
 }
 
 .home-wrap2{
+  display:grid;
   position:relative;
-  display: grid;
   justify-content:center;
   align-content:center;
   height:600px;
-  width:600px;
+  width:100%;
   z-index:8;
 }
 
@@ -176,6 +195,7 @@ div.post-body.album {
   display:grid;
   justify-content:left;
   align-content:left;
+  position:relative;
   margin:30;
   background-image: url(https://www.pngitem.com/pimgs/m/134-1345781_pop-artists-pop-music-artists-collage-hd-png.png) ;
   background-repeat: no-repeat;
@@ -183,7 +203,7 @@ div.post-body.album {
   background-size: cover;
   object-fit: cover;
   z-index:8;
-  width:650px;
+  width:100%;
   height:600px;
 }
 
@@ -292,9 +312,10 @@ div.post-body.album {
 
 .form-display{
 display:grid;
-position:relative;
-Justify-content:center;
+justify-content:center;
 align-content:center;
+position:relative;
+width:1080px;
 zoom:0.8;
 background-color: #767676;
 background-size:auto;
@@ -304,22 +325,25 @@ border-radius:10px;
 .form-body1 {
   display: grid;
   position:absolute;
-  padding:25px;
-  z-index:8;
-  width: 20%;
-  height:500px;
+  width:100%;
+  padding:1px;
   top:0;
+  bottom:0;
   right:0;
   left:0;
-  bottom:0;
+  z-index:8;
 }
 
 .form-body2 {
   display: grid;
   position:absolute;
+  width:300px;
+  padding:1px;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
   z-index:8;
-  width: 20%;
-  height:500px;
 }
 .album-body {
   margin: 0 auto;
@@ -339,26 +363,26 @@ justify-content: space-around;
   justify-content: space-around;
 }
 
-.artist-wrap{
-  display: grid;
-  flex-direction: row;
-  justify-content: space-around;
-  position:absolute;
-  z-index:8;
-  zoom:0.5;
-}
+
 .form-artist {
   background-color:#303132;
-  margin:0px;
   padding:30px;
   border:0;
-  z-index:8;
   width:540px;
   height:233px;
-  font-size:50px;
+  font-size:50px;  
   color:aliceblue;
+  z-index:8;
   }
 
+.artist-wrap{
+  display: grid;
+  justify-content:center;
+  align-content:center;
+  position:absolute;
+  zoom:0.5;
+  z-index:8;
+}
 .album-wrap{
   display: grid;
   justify-content:center;
@@ -371,11 +395,11 @@ justify-content: space-around;
   .form-album {
     background-color:#303132;
     margin:0px;
-    padding:30px;
+    padding:17%;
+    width:450px;
+    height:80px;
     border:0;
     z-index:8;
-    width:845px;
-    height:235px;
     font-size:50px;
     }
 
@@ -385,13 +409,15 @@ justify-content: space-around;
   position:relative;
   margin:10px;
   margin-right:0;
-  width:500px;
+  width:100%;
 }
 .albumImage{
   display:grid;
-  justify-content:left;
-  align-content:left;
-  background-image: url(https://www.rollingstone.com/wp-content/uploads/2019/12/RS-BestAlbumofDecade.jpg?w=1581&h=1054&crop=1) ;
+  position:absolute;
+
+  justify-content:center;
+  align-content:center;
+  background-image: url(https://www.rollingstone.com/wp-content/uploads/2019/12/RS-BestAlbumofDecade.jpg?w=1581&h=1054&crop=0) ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
