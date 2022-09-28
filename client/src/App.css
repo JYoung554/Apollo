@@ -28,7 +28,6 @@
   }
   .form-album {
     width:20vw;
-      background-color:#057ef7;
     }
 
 }
@@ -36,7 +35,6 @@
 @media screen and (min-width: 1080px){
   .form-album {
     width:20vw;
-      background-color:#057ef7;
     }
 }
 
@@ -395,6 +393,7 @@ justify-content: space-around;
 
   .form-album {
     background-color:#303132;
+    color:aliceblue;
     margin:0px;
     padding:17%;
     width:450px;
