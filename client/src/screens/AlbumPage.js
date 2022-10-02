@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import AlbumPost from '../components/AlbumPost'
 import axios from 'axios'
-import {BASE_URL} from '../globals'
+import { BASE_URL } from '../globals'
 
 export default class AlbumPage extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
-      this.state = {
-        albums:[],
-      }
+    this.state = {
+      album: []
+    }
   }
-  componentDidMount(){
+  componentDidMount() {
     this.getAllAlbums()
   }
 
@@ -19,7 +19,7 @@ export default class AlbumPage extends Component {
       const res = await axios.get(`${BASE_URL}/api/albums`)
       console.log(res)
       this.setState({
-        albums: res.data.album
+        album: res.data.album
       })
     } catch (error) {
       throw error
@@ -27,14 +27,11 @@ export default class AlbumPage extends Component {
   }
 
   deleteAlbum = async (albumId) => {
-  
     try {
-      const res = await axios.delete(
-        `${BASE_URL}/api/albums/${albumId}`
-      )
+      const res = await axios.delete(`${BASE_URL}/api/albums/${albumId}`)
       const res2 = await axios.get(`${BASE_URL}/api/albums`)
       this.setState({
-        albums: res2.data.album
+        album: res2.data.album
       })
       return res2.data
     } catch (error) {
@@ -42,24 +39,21 @@ export default class AlbumPage extends Component {
     }
   }
 
-
-
-render(){
-
-  if(this.state.albums){
-  
-  const albums = this.state.albums.map((album, index)=>{
-   return <AlbumPost album={album}
-    key={`Album${index}`}
-    
-    onClick={this.deleteAlbum}    />
+  render() {
+    const albums = this.state.album.map((album, index) => {
+      return (
+        <AlbumPost
+          album={album}
+          key={`Album${index}`}
+          onClick={this.deleteAlbum}
+        />
+      )
     })
-    return(
-      <div className='album-body add2'>
-        <h1 className='page-title album-title album'>Album Page</h1>
-        {albums}
+    return (
+      <div>
+        <h1 className="page-title">Album Page</h1>
+        <div className="artist-body">{albums}</div>
       </div>
     )
   }
-}
 }

@@ -13,7 +13,9 @@ export default class HomePage extends Component {
       name: '',
       genre: '',
       yearsActive: '',
-      image: ''
+      image: '',
+      artist: '',
+      releaseDate: ''
     }
   }
 
@@ -25,13 +27,15 @@ export default class HomePage extends Component {
       image: this.state.image
     }
     try {
-      const res = await axios.post(`${BASE_URL}/api/artists`, newArtist)
       const res2 = await axios.get(`${BASE_URL}/api/artists`)
+      const res = await axios.post(`${BASE_URL}/api/artists`, newArtist)
+
       this.setState({
-        artistPost: res2.data.artists
+        artistPost: res.data.artists
       })
-      return res2.data
+      return res.data
     } catch (error) {
+      console.log(error.res.data)
       throw error
     }
   }
@@ -60,8 +64,43 @@ export default class HomePage extends Component {
     })
   }
 
+  addNewAlbum = async () => {
+    const newAlbum = {
+      name: this.state.name,
+      artist: this.state.artist,
+      genre: this.state.genre,
+      releaseDate: this.state.releaseDate,
+      image: this.state.image
+    }
+    try {
+      const res = await axios.post(`${BASE_URL}/api/albums`, newAlbum)
+
+      const res2 = await axios.get(`${BASE_URL}/api/albums`)
+      this.setState({
+        albumPost: res.data.album
+      })
+      return res.data
+    } catch (error) {
+      throw error
+    }
+  }
+
+  AhandleSubmit = (event) => {
+    event.preventDefault()
+    this.setState({
+      submitted: true,
+      name: '',
+      artist: '',
+      genre: '',
+      releaseDate: '',
+      image: ''
+    })
+    this.addNewAlbum()
+  }
+
   render() {
     const artists = this.state.allArtists
+    const albums = this.state.allAlbums
     return (
       <div className="home-wrap">
         <div className="Home">
@@ -128,7 +167,77 @@ export default class HomePage extends Component {
               <h3 className="add">Add Album</h3>
             </div>
           </div>
-          <CreateAlbum />
+          <div className="home-wrap2">
+            A
+            <form className="form-body2" onSubmit={this.AhandleSubmit}>
+              {' '}
+              <div className="album-wrap">
+                Album
+                <input
+                  type="text"
+                  placeholder="Album Name"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                  name="name"
+                  className="form-album"
+                />
+                <input
+                  type="text"
+                  placeholder="Album Genre"
+                  value={this.state.genre}
+                  onChange={this.handleChange}
+                  name="genre"
+                  className="form-album"
+                />
+                {/* <input
+    type='text'
+    placeholder='Album Description'
+    value={this.state.description}
+    onChange={this.handleChange}
+    name='description'
+    maxLength='200'
+    className='form-text'
+    /> */}
+                <input
+                  type="text"
+                  placeholder="Album Image"
+                  value={this.state.image}
+                  onChange={this.handleChange}
+                  name="image"
+                  maxLength="200"
+                  className="form-album"
+                />
+                <input
+                  type="text"
+                  placeholder="Artist Name"
+                  value={this.state.artist}
+                  onChange={this.handleChange}
+                  name="artist"
+                  maxLength="200"
+                  className="form-album"
+                />
+                <input
+                  type="text"
+                  placeholder="Release-Date"
+                  value={this.state.releaseDate}
+                  onChange={this.handleChange}
+                  name="releaseDate"
+                  className="form-album"
+                />
+                <button type="submit" className="custom-btn">
+                  Add
+                </button>
+                {this.state.submitted && (
+                  <button className="custom-btn view-post">
+                    <NavLink className="view-btn" to="/albums">
+                      View Albums
+                    </NavLink>
+                  </button>
+                )}
+              </div>
+            </form>
+            <div></div>
+          </div>
         </section>
         <h1 className="intro">Add Your Album or Artist!</h1>
       </div>

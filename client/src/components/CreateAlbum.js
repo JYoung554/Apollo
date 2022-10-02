@@ -1,6 +1,8 @@
+/*
 import React, { Component } from 'react'
 import axios from 'axios'
 import { NavLink, Route, Switch } from 'react-router-dom'
+import { BASE_URL } from '../globals'
 
 export default class CreateAlbum extends Component {
   constructor() {
@@ -24,13 +26,13 @@ export default class CreateAlbum extends Component {
       image: this.state.image
     }
     try {
-      const res = await axios.post('http://localhost:3001/api/albums', newAlbum)
+      const res = await axios.post(`${BASE_URL}/api/albums`, newAlbum)
 
-      const res2 = await axios.get('http://localhost:3001/api/albums')
+      const res2 = await axios.get(`${BASE_URL}/api/albums`)
       this.setState({
-        albumPost: res2.data.album
+        albumPost: res.data.album
       })
-      return res2.data
+      return res.data
     } catch (error) {
       throw error
     }
@@ -57,7 +59,7 @@ export default class CreateAlbum extends Component {
 
   updateSubmitted = () => {
     this.setState({
-      submitted: true
+      submitted: false
     })
   }
 
@@ -94,8 +96,9 @@ export default class CreateAlbum extends Component {
     name='description'
     maxLength='200'
     className='form-text'
-    /> */}
-            <input
+    /> */
+/*}
+            //<input
               type="text"
               placeholder="Album Image"
               value={this.state.image}
@@ -137,4 +140,4 @@ export default class CreateAlbum extends Component {
       </div>
     )
   }
-}
+}*/

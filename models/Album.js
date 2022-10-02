@@ -4,24 +4,24 @@ const Album = new Schema(
   {
     name: {
       type: String,
-      required: true,
+      required: true
     },
     genre: {
       type: String,
-      required: true,
+      required: true
     },
     artist: {
       type: String,
-      required: false,
+      required: false
     },
     image: {
       type: String,
-      required: false,
+      required: false
     },
     releaseDate: {
       type: String,
-      required: false,
-    },
+      required: false
+    }
   },
   { timestamps: true }
 )

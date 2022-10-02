@@ -238,7 +238,17 @@ div.post-body.album {
   background-attachment: fixed;
   background-position: center;
 }
-
+.album-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:500px;
+    height:500px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 .add {
   display:grid;
   Justify-content:center;
@@ -344,11 +354,7 @@ border-radius:10px;
   left:0;
   z-index:8;
 }
-.album-body {
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+
 
 .add-container{
   display: flex;
@@ -445,8 +451,10 @@ justify-content: space-around;
 }
 
 .add2 {
-  margin-right: 900px;
-  margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .album {
