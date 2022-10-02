@@ -4,7 +4,7 @@
 
 ---
 
-![Apollo](https://github.com/JYoung554/Apollo/blob/main/Screen%20Shot%202021-10-30%20at%201.01.06%20PM.png)
+![Apollo](https://github.com/JYoung554/Apollo/blob/main/Screen%20Shot%202022-10-02%20at%206.27.01%20PM.png?raw=true)
 
 ### Apollo
 
