@@ -75,7 +75,7 @@ export default class HomePage extends Component {
     try {
       const res = await axios.post(`${BASE_URL}/albums`, newAlbum)
 
-      const res2 = await axios.get(`${BASE_URL}/albums`)
+      const res2 = await axios.get(`${BASE_URL}/api/albums`)
       this.setState({
         albumPost: res.data.album
       })
