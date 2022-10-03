@@ -11,10 +11,10 @@ export default class AlbumPage extends Component {
     }
   }
   componentDidMount() {
-    this.getAllAlbums()
+    this.getAlbum()
   }
 
-  getAllAlbums = async () => {
+  getAlbum = async () => {
     try {
       const res = await axios.get(`${BASE_URL}/api/albums`)
       console.log(res)

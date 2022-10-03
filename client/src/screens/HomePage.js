@@ -19,7 +19,7 @@ export default class HomePage extends Component {
     }
   }
 
-  addNewArtist = async () => {
+  addArtist = async () => {
     const newArtist = {
       name: this.state.name,
       yearsActive: this.state.yearsActive,
@@ -55,7 +55,7 @@ export default class HomePage extends Component {
       genre: '',
       image: ''
     })
-    this.addNewArtist()
+    this.addArtist()
   }
 
   updateSubmitted = () => {
@@ -64,7 +64,7 @@ export default class HomePage extends Component {
     })
   }
 
-  addNewAlbum = async () => {
+  addAlbum = async () => {
     const newAlbum = {
       name: this.state.name,
       artist: this.state.artist,
@@ -95,7 +95,7 @@ export default class HomePage extends Component {
       releaseDate: '',
       image: ''
     })
-    this.addNewAlbum()
+    this.addAlbum()
   }
 
   render() {

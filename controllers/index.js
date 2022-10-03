@@ -3,9 +3,9 @@ const Album = require('../models/Album')
 
 const addArtist = async (req, res) => {
   try {
-    const artist = new Artist(req.body)
+    const artist = await new Artist(req.body)
     await artist.save()
-    return res.status(201).json({
+    return res.status(200).json({
       artist
     })
   } catch (error) {
@@ -16,7 +16,7 @@ const addArtist = async (req, res) => {
 const getArtists = async (req, res) => {
   try {
     const artists = await Artist.find()
-    return res.status(200).json({ artists })
+    if (artists) return res.status(200).json({ artists })
   } catch (error) {
     return res.status(500).json({ error: error.message })
   }
@@ -38,7 +38,7 @@ const addAlbum = async (req, res) => {
   try {
     const album = await new Album(req.body)
     album.save()
-    return res.status(201).json({
+    return res.status(200).json({
       album
     })
   } catch (error) {
