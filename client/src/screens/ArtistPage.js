@@ -16,7 +16,7 @@ export default class ArtistPage extends Component {
 
   getArtists = async () => {
     try {
-      const res = await axios.get(`${BASE_URL}/artists`)
+      const res = await axios.get(`${BASE_URL}/api/artists`)
       console.log(res)
       this.setState({
         artists: res.data.artists
