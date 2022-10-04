@@ -28,7 +28,7 @@ export default class HomePage extends Component {
     }
     try {
       const res2 = await axios.get(`${BASE_URL}/artists`)
-      const res = await axios.post(`${BASE_URL}/artists`, newArtist)
+      const res = await axios.post(`${BASE_URL}/api/artists`, newArtist)
 
       this.setState({
         artistPost: res.data.artists
