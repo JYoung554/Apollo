@@ -3,7 +3,7 @@ const Album = require('../models/Album')
 
 const addArtist = async (req, res) => {
   try {
-    const artist = await new Artist(req.body)
+    const artist = new Artist(req.body)
     await artist.save()
     return res.status(200).json({
       artist

@@ -19,7 +19,7 @@ export default class HomePage extends Component {
     }
   }
 
-  addArtist = async () => {
+  addNewArtist = async () => {
     const newArtist = {
       name: this.state.name,
       yearsActive: this.state.yearsActive,
@@ -28,7 +28,7 @@ export default class HomePage extends Component {
     }
     try {
       const res2 = await axios.get(`${BASE_URL}/artists`)
-      const res = await axios.post(`${BASE_URL}/artists`, newArtist)
+      const res = await axios.post(`${BASE_URL}artists`, newArtist)
 
       this.setState({
         artistPost: res.data.artists
@@ -55,7 +55,7 @@ export default class HomePage extends Component {
       genre: '',
       image: ''
     })
-    this.addArtist()
+    this.addNewArtist()
   }
 
   updateSubmitted = () => {
@@ -64,7 +64,7 @@ export default class HomePage extends Component {
     })
   }
 
-  addAlbum = async () => {
+  addNewAlbum = async () => {
     const newAlbum = {
       name: this.state.name,
       artist: this.state.artist,
@@ -73,9 +73,9 @@ export default class HomePage extends Component {
       image: this.state.image
     }
     try {
-      const res = await axios.post(`${BASE_URL}/api/albums`, newAlbum)
+      const res = await axios.post(`${BASE_URL}/albums`, newAlbum)
 
-      const res2 = await axios.get(`${BASE_URL}/api/albums`)
+      const res2 = await axios.get(`${BASE_URL}/albums`)
       this.setState({
         albumPost: res.data.album
       })
@@ -95,11 +95,12 @@ export default class HomePage extends Component {
       releaseDate: '',
       image: ''
     })
-    this.addAlbum()
+    this.addNewAlbum()
   }
 
   render() {
-    const artists = this.state.artists
+    const artists = this.state.allArtists
+    const albums = this.state.allAlbums
     return (
       <div className="home-wrap">
         <div className="Home">
