@@ -41,7 +41,10 @@ export default class ArtistPage extends Component {
   }
 
   render() {
-    artists.map((artist, index) => {
+    if (this.state.artists.length) {
+      console.log(this.state.artists[0].name)
+    }
+    const artists = this.state.artists.map((artist, index) => {
       return (
         <ArtistPost
           artist={artist}
