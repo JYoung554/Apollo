@@ -16,7 +16,7 @@ export default class ArtistPage extends Component {
 
   getArtists = async () => {
     try {
-      const res = await axios.get(`${BASE_URL}/artists`)
+      const res = await axios.get(`${BASE_URL}/api/artists`)
       console.log(res)
       this.setState({
         artists: res.data.artists
@@ -28,9 +28,9 @@ export default class ArtistPage extends Component {
 
   deleteArtist = async (artistId) => {
     try {
-      const res = await axios.delete(`${BASE_URL}/artists/${artistId}`)
+      const res = await axios.delete(`${BASE_URL}/api/artists/${artistId}`)
       console.log(res.data)
-      const res2 = await axios.get(`${BASE_URL}/artists`)
+      const res2 = await axios.get(`${BASE_URL}/api/artists`)
       this.setState({
         artists: res2.data.artists
       })

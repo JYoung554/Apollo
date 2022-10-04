@@ -16,7 +16,7 @@ export default class AlbumPage extends Component {
 
   getAlbum = async () => {
     try {
-      const res = await axios.get(`${BASE_URL}/albums`)
+      const res = await axios.get(`${BASE_URL}/api/albums`)
       console.log(res)
       this.setState({
         album: res.data.album
@@ -28,8 +28,8 @@ export default class AlbumPage extends Component {
 
   deleteAlbum = async (albumId) => {
     try {
-      const res = await axios.delete(`${BASE_URL}/albums/${albumId}`)
-      const res2 = await axios.get(`${BASE_URL}/albums`)
+      const res = await axios.delete(`${BASE_URL}/api/albums/${albumId}`)
+      const res2 = await axios.get(`${BASE_URL}/api/albums`)
       this.setState({
         album: res2.data.album
       })

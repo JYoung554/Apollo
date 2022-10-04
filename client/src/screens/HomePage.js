@@ -27,8 +27,8 @@ export default class HomePage extends Component {
       image: this.state.image
     }
     try {
-      const res2 = await axios.get(`${BASE_URL}/artists`)
-      const res = await axios.post(`${BASE_URL}/artists`, newArtist)
+      const res2 = await axios.get(`${BASE_URL}/api/artists`)
+      const res = await axios.post(`${BASE_URL}/api/artists`, newArtist)
 
       this.setState({
         artistPost: res.data.artists
@@ -73,9 +73,9 @@ export default class HomePage extends Component {
       image: this.state.image
     }
     try {
-      const res = await axios.post(`${BASE_URL}/albums`, newAlbum)
+      const res = await axios.post(`${BASE_URL}/api/albums`, newAlbum)
 
-      const res2 = await axios.get(`${BASE_URL}/albums`)
+      const res2 = await axios.get(`${BASE_URL}/api/albums`)
       this.setState({
         albumPost: res.data.album
       })
