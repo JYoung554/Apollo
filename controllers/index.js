@@ -36,8 +36,8 @@ const deleteArtist = async (req, res) => {
 
 const addAlbum = async (req, res) => {
   try {
-    const album = await new Album(req.body)
-    album.save()
+    const album = new Album(req.body)
+    await album.save()
     return res.status(200).json({
       album
     })
