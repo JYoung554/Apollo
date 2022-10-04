@@ -99,7 +99,7 @@ export default class HomePage extends Component {
   }
 
   render() {
-    const artists = this.state.allArtists
+    const artists = this.state.artists
     return (
       <div className="home-wrap">
         <div className="Home">
