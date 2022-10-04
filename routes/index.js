@@ -1,7 +1,7 @@
 const { Router } = require('express')
 const controllers = require('../controllers')
 const router = Router()
-//router.get('/', (req, res) => res.send('This is root!'))/
+router.get('/api', (req, res) => res.send('This is root!'))
 
 router.get('/api/artists', controllers.getArtists)
 router.post('/api/artists', controllers.addArtist)
