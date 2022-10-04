@@ -100,7 +100,6 @@ export default class HomePage extends Component {
 
   render() {
     const artists = this.state.allArtists
-    const albums = this.state.allAlbums
     return (
       <div className="home-wrap">
         <div className="Home">
