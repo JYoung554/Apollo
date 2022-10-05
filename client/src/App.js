@@ -15,7 +15,7 @@ export default class App extends Component {
       const maxSize = 1
       let scale = Math.min(
         window.innerWidth / (box.offsetWidth + 8),
-        window.innerHeight / (box.offsetHeight + 8)
+        window.innerHeight / (box.offsetHeight - 0.5)
       )
       scale = Math.min(maxSize, Math.max(minSize, scale))
       document.documentElement.style.setProperty('--pageScale', scale)
